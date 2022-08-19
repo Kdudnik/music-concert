@@ -1,0 +1,21 @@
+:root {
+    /* COLORS */
+    /* general */
+    --theme-white: #ffffff;
+    --theme-black: #222222;
+    --theme-red-light: #ffa3a3;
+    --theme-red: #fc5252;
+    --theme-blue: #381ddb;
+
+    /* additional */
+    --additional-grey: #e0e0e0;
+    --additional-orange: #db841d;
+    --additional-brown: #aa6550;
+    --additional-pink: #c00096;
+    --additional-pink-light: #ffcdcd;
+    --additional-orange-light: #ffbe9d;
+    --additional-blue: #84c4ff;
+
+    /* PADDING */
+    --main-page-width: 1170px;
+}
