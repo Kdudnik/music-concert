@@ -16,6 +16,9 @@
     --additional-orange-light: #ffbe9d;
     --additional-blue: #84c4ff;
 
-    /* PADDING */
-    --main-page-width: 1170px;
+    /* MARGIN */
+    --max-page-width: 1170px;
+
+    /* TRANSITION */
+    --main-transition-duration: .3s;
 }

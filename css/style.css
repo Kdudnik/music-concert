@@ -1,6 +1,7 @@
 @import url(variables.css);
 @import url(fonts.css);
 @import url(header.css);
+@import url(hero.css);
 
 html,
 body,
@@ -73,4 +74,13 @@ ul {
 
 .btn--red {
     background-color: var(--theme-red);
+}
+
+.btn--red:hover {
+    background-color: var(--theme-red-light);
+}
+
+.btn--transperant {
+    background-color: transparent;
+    box-shadow: none;
 }
