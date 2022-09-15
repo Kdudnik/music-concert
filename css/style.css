@@ -1,1 +1,76 @@
 @import url(variables.css);
+@import url(fonts.css);
+@import url(header.css);
+
+html,
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    color: var(--theme-white);
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+a {
+    text-transform: none;
+    color: var(--theme-white);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: var(--max-page-width);
+    margin: 0 auto;
+    padding: 0 16px;
+    position: relative;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    transition: var(--main-transition-duration);
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* BTNs */
+
+.btn {
+    background-color: var(--theme-blue);
+    box-shadow: 0px 10px 30px rgba(56, 29, 219, 0.2);
+    border-radius: 8px;
+    color: var(--theme-white);
+    border: 0;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--main-transition-duration);
+    font-size: 14px;
+}
+
+.btn--white {
+    background-color: var(--theme-white);
+    color: var(--theme-blue);
+}
+
+.btn--white:hover {
+    background-color: var(--additional-grey);
+}
+
+.btn--red {
+    background-color: var(--theme-red);
+}
