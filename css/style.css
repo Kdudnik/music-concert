@@ -2,6 +2,7 @@
 @import url(fonts.css);
 @import url(header.css);
 @import url(hero.css);
+@import url(info.css);
 
 html,
 body,
@@ -55,7 +56,6 @@ ul {
     color: var(--theme-white);
     border: 0;
     padding: 15px 25px;
-    text-transform: uppercase;
     font-family: 'Montserrat';
     font-weight: 700;
     cursor: pointer;
@@ -66,6 +66,7 @@ ul {
 .btn--white {
     background-color: var(--theme-white);
     color: var(--theme-blue);
+    text-transform: uppercase;
 }
 
 .btn--white:hover {

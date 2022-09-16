@@ -1,0 +1,37 @@
+.info {
+    color: var(--theme-black);
+    padding-top: 100px;
+    text-align: center;
+}
+
+.info-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-block__text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-block__title {
+    font-family: 'Montserrat';
+    font-size: 30px;
+}
+
+.info-block__paragraph {
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+.info-block__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info .btn {
+    display: flex;
+    gap: 5px;
+}
