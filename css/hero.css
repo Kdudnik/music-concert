@@ -1,9 +1,14 @@
+.container--hero {
+    height: 100vh;
+}
+
 .hero {
     position: relative;
     display: flex;
     padding-top: 25px;
     flex-wrap: wrap;
     text-align: center;
+    color: var(--theme-white);
 }
 
 .hero__background {

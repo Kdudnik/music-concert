@@ -3,15 +3,25 @@
 @import url(header.css);
 @import url(hero.css);
 @import url(info.css);
+@import url(category.css);
 
 html,
 body,
 ul {
     margin: 0;
     padding: 0;
-    color: var(--theme-white);
+    color: var(--theme-black);
     font-family: 'Montserrat';
     font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
 }
 
 a {
@@ -22,6 +32,10 @@ a {
 
 ul {
     list-style: none;
+}
+
+p {
+    margin: 0;
 }
 
 .container {
