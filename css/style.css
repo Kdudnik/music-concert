@@ -4,6 +4,7 @@
 @import url(hero.css);
 @import url(info.css);
 @import url(category.css);
+@import url(pricing.css);
 
 html,
 body,
@@ -98,4 +99,11 @@ p {
 .btn--transperant {
     background-color: transparent;
     box-shadow: none;
+}
+
+.btn--bordered {
+    background-color: transparent;
+    box-shadow: none;
+    border: 2px solid var(--theme-blue);
+    color: var(--theme-blue);
 }
