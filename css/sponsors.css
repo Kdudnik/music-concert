@@ -1,0 +1,23 @@
+.sponsors-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    gap: 60px 0;
+}
+
+.sponsors__title {
+    font-size: 30px;
+}
+
+.sponsors-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px 30px;
+}
+
+.sponsors__image {
+    width: 25%;
+    height: auto;
+}
