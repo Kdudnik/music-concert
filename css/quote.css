@@ -1,0 +1,58 @@
+.quote {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.quote__title {
+    font-size: 30px;
+}
+
+.quote-block {
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.quote__text {
+    font-size: 15px;
+    position: relative;
+}
+
+.quote__text::before {
+    content: url(../images/hooks-before.svg);
+    position: absolute;
+    left: -5px;
+    top: -20px;
+}
+
+.quote__text::after {
+    content: url(../images/hooks-after.svg);
+    position: absolute;
+    bottom: -20px;
+    right: -5px;
+}
+
+.quote__photo {
+    padding-top: 30px;
+    width: 30%;
+    height: auto;
+}
+
+.quote__name {
+    width: 100%;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.quote__subtitle {
+    padding-top: 10px;
+}
+
+.quote__subtitle a {
+    font-size: 12px;
+    color: var(--theme-blue);
+}
