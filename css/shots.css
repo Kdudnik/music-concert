@@ -1,0 +1,84 @@
+.shots-wrapper {
+    background: linear-gradient(180deg, rgba(252, 82, 82, 0.05) 0%, rgba(252, 82, 82, 0) 100%);
+    margin-top: 100px;
+    position: relative;
+}
+
+.shots {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    z-index: 2;
+}
+
+.shots-bg-vector {
+    position: absolute;
+    opacity: .1;
+    z-index: 1;
+    width: 60%;
+    height: auto;
+    left: 5%;
+    top: 25px;
+}
+
+.shots__title {
+    font-size: 30px;
+}
+
+.shots-block {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    gap: 10px;
+}
+
+.shots-block__image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.shots-block__image {
+    width: 100%;
+    height: auto;
+}
+
+.shots-block__subtitle {
+    flex-basis: 100%;
+}
+
+.feedback {
+    font-weight: 700;
+    font-family: 'Montserrat';
+    padding: 0 25px;
+    position: relative;
+}
+
+.feedback.likes::before {
+    content: url(../images/like.svg);
+    position: absolute;
+    top: -3px;
+    left: 0;
+}
+
+.feedback.comments::before {
+    content: url(../images/comment.svg);
+    position: absolute;
+    top: -3px;
+    left: 0;
+}
+
+.shots-block__subtitle {
+    font-weight: 400;
+    font-family: 'Raleway';
+    font-size: 16px;
+}
+
+.shots-block__tags {
+    font-size: 12px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    opacity: 0.5;
+}
