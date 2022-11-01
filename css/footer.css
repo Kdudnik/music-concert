@@ -1,0 +1,33 @@
+footer {
+    background-color: var(--theme-black);
+    padding: 50px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+}
+
+footer .logo {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-list {
+    color: var(--theme-white);
+    text-transform: uppercase;
+    display: grid;
+    gap: 20px;
+    font-size: 18px;
+    flex-basis: 40%;
+}
+
+.footer-list.icons {
+    justify-content: flex-end;
+}
+
+footer span {
+    color: var(--theme-white);
+    opacity: .3;
+    font-family: 'Raleway';
+}
