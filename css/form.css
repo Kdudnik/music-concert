@@ -18,6 +18,10 @@
     gap: 30px;
 }
 
+form * {
+    width: 100%;
+}
+
 .form__input-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -62,10 +66,6 @@
 .label--blue {
     color: var(--theme-blue);
     opacity: 1;
-}
-
-form .btn {
-    flex-basis: 80%;
 }
 
 .form__shape {

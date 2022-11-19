@@ -3,7 +3,7 @@ header {
     justify-content: space-between;
     flex-basis: 100%;
     z-index: 1;
-    padding-top: 45px;
+    padding-top: 20px;
 }
 
 .navbar {
