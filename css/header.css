@@ -1,9 +1,14 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    flex-basis: 100%;
+    width: 100%;
     z-index: 1;
     padding-top: 20px;
+    position: absolute;
+    top: 0;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbar {
@@ -19,6 +24,7 @@ header {
 .navbar__list-el {
     display: flex;
     align-items: center;
+    transition: .3s;
 }
 
 .navbar__list-link {
@@ -28,7 +34,7 @@ header {
 }
 
 .navbar__list-link:hover {
-    color: var(--additional-grey);
+    color: var(--theme-red-light);
 }
 
 .pop-up-triger::after {
@@ -45,6 +51,10 @@ header {
 .burger {
     display: none;
     align-items: center
+}
+
+header .btn--white:hover {
+    background-color: var(--theme-red-light);
 }
 
 @media screen and (max-width: 900px) {

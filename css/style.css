@@ -13,6 +13,10 @@
 @import url(contact.css);
 @import url(footer.css);
 
+body {
+    position: relative;
+}
+
 html,
 body,
 ul {
