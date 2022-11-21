@@ -35,4 +35,39 @@
 .info .btn {
     display: flex;
     gap: 5px;
+    transition: var(--main-transition-duration);
+}
+
+.info .btn:hover {
+    background-color: var(--additional-blue);
+    gap: 10px;
+}
+
+.reversed {
+    order: -1;
+}
+
+@media screen and (min-width: 900px) {
+    .info-block {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .info-block__text {
+        text-align: left;
+        align-items: flex-start;
+        flex-basis: 40%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .info-block__title {
+        font-size: 40px;
+    }
+
+    .info-block__paragraph {
+        font-size: 20px;
+    }
 }
