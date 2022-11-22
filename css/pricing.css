@@ -78,17 +78,17 @@
 }
 
 @media screen and (min-width: 768px) {
-    .pricing-blocks__wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
-
     .pricing__title {
         font-size: 40px;
     }
 }
 
 @media screen and (min-width: 1440px) {
+    .pricing-blocks__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .pricing__title {
         font-size: 50px;
     }
