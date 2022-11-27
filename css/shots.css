@@ -1,84 +1,79 @@
-.shots-wrapper {
-    /* background: linear-gradient(180deg, rgba(252, 82, 82, 0.05) 0%, rgba(252, 82, 82, 0) 100%); maybe only for pc? */
-    margin-top: 100px;
-    position: relative;
-}
-
-.shots {
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 60px;
-    z-index: 2;
-}
-
-.shots-bg-vector {
-    position: absolute;
-    opacity: .1;
-    z-index: 1;
-    width: 60%;
-    height: auto;
-    left: 5%;
-    top: 25px;
+section.shots {
+    background-image: url('../images/instagram-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 160px;
 }
 
 .shots__title {
-    font-size: 30px;
+    margin-bottom: 60px;
 }
 
-.shots-block {
+.shots-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    padding: 0 16px;
-    gap: 10px;
+    justify-content: center;
+    gap: 30px;
+    overflow: hidden;
 }
 
-.shots-block__image-wrapper {
+.shot__image-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
 }
 
-.shots-block__image {
-    width: 100%;
+.shot__imgage {
+    max-width: 100%;
     height: auto;
 }
 
-.shots-block__subtitle {
+.shot__content {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.shot__content > * {
     flex-basis: 100%;
 }
 
-.feedback {
-    font-weight: 700;
-    font-family: 'Montserrat';
-    padding: 0 25px;
-    position: relative;
+.shot__feedback {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
 }
 
-.feedback.likes::before {
-    content: url(../images/like.svg);
-    position: absolute;
-    top: -3px;
-    left: 0;
-}
-
-.feedback.comments::before {
-    content: url(../images/comment.svg);
-    position: absolute;
-    top: -3px;
-    left: 0;
-}
-
-.shots-block__subtitle {
-    font-weight: 400;
-    font-family: 'Raleway';
+.shot__feedback > button {
+    display: flex;
+    align-items: center;
     font-size: 16px;
+    font-weight: 700;
+    gap: 8px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
 }
 
-.shots-block__tags {
-    font-size: 12px;
-    font-family: 'Raleway';
-    font-weight: 400;
-    opacity: 0.5;
+.shot__feedback > button:hover path,
+.shot__feedback > button:hover span {
+    fill: #ff0000;
+    color: #ff0000;
+}
+
+.shot__feedback > button > span {
+    padding-top: 2px;
+}
+
+.shot__feedback path {
+    fill: var(--theme-black);
+}
+
+.hashtags__tag {
+    color: var(--theme-black);
+    opacity: .5;
+}
+
+.hashtags__tag:hover {
+    text-decoration: underline;
+    opacity: 1;
 }
