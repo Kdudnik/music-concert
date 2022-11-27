@@ -1,1301 +1,800 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" type="image/x-icon" href="./images/saxophone.svg" />
-    <title>Music Concert Landing</title>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <a href="#" class="logo"><img src="./images/logo.svg" alt="Logo" /></a>
-        <nav class="navbar">
-          <ul class="navbar__list">
-            <li class="navbar__list-el">
-              <a href="#" class="navbar__list-link">Home</a>
-            </li>
-            <li class="navbar__list-el pop-up-triger">
-              <a href="#" class="navbar__list-link">Speakers</a>
-            </li>
-            <li class="navbar__list-el pop-up-triger">
-              <a href="#" class="navbar__list-link">Schedule</a>
-            </li>
-            <li class="navbar__list-el">
-              <a href="#" class="navbar__list-link">Contact us</a>
-            </li>
-          </ul>
-          <button class="btn btn--white">Get tickets</button>
-        </nav>
-        <div class="burger">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M11 17L19 17"
-              stroke="#ffffff"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M5 12H19"
-              stroke="#ffffff"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M11 7L19 7"
-              stroke="#ffffff"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" type="image/x-icon" href="./images/saxophone.svg" />
+  <title>Music Concert Landing</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="#" class="logo"><img src="./images/logo.svg" alt="Logo" /></a>
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__list-el">
+            <a href="#" class="navbar__list-link">Home</a>
+          </li>
+          <li class="navbar__list-el pop-up-triger">
+            <a href="#" class="navbar__list-link">Speakers</a>
+          </li>
+          <li class="navbar__list-el pop-up-triger">
+            <a href="#" class="navbar__list-link">Schedule</a>
+          </li>
+          <li class="navbar__list-el">
+            <a href="#" class="navbar__list-link">Contact us</a>
+          </li>
+        </ul>
+        <button class="btn btn--white">Get tickets</button>
+      </nav>
+      <div class="burger">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 17L19 17" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M5 12H19" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M11 7L19 7" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+  </header>
+  <div class="hero">
+    <img class="hero__background" src="./images/hero-bg.png" alt="Background" />
+    <div class="container">
+      <h1 class="hero-title">
+        The Best Experience Of <span class="title--marked">Music</span> In
+        2021
+      </h1>
+      <p class="hero-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        vitae ligula placerat, eleifend ex non, vehicula libero. Suspendisse
+        eget tellus lectus.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn btn--red">Get Started</button>
+        <button class="btn btn--transperant hero__button">
+          <svg width="40" height="40" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_893_173)">
+              <path
+                d="M28.0001 51.3333C15.1131 51.3333 4.66675 40.887 4.66675 28C4.66675 15.113 15.1131 4.66663 28.0001 4.66663C40.8871 4.66663 51.3334 15.113 51.3334 28C51.3334 40.887 40.8871 51.3333 28.0001 51.3333ZM28.0001 46.6666C32.9508 46.6666 37.6987 44.7 41.1994 41.1993C44.7001 37.6986 46.6668 32.9507 46.6668 28C46.6668 23.0493 44.7001 18.3013 41.1994 14.8006C37.6987 11.3 32.9508 9.33329 28.0001 9.33329C23.0494 9.33329 18.3014 11.3 14.8008 14.8006C11.3001 18.3013 9.33342 23.0493 9.33342 28C9.33342 32.9507 11.3001 37.6986 14.8008 41.1993C18.3014 44.7 23.0494 46.6666 28.0001 46.6666ZM24.7847 19.635L36.1691 27.223C36.2971 27.3082 36.4021 27.4237 36.4747 27.5592C36.5473 27.6948 36.5853 27.8462 36.5853 28C36.5853 28.1537 36.5473 28.3051 36.4747 28.4407C36.4021 28.5763 36.2971 28.6918 36.1691 28.777L24.7824 36.365C24.642 36.458 24.479 36.5114 24.3108 36.5193C24.1425 36.5273 23.9753 36.4895 23.8267 36.4101C23.6782 36.3307 23.5539 36.2126 23.467 36.0682C23.3802 35.9239 23.334 35.7587 23.3334 35.5903V20.4096C23.3337 20.2408 23.3798 20.0752 23.4668 19.9305C23.5538 19.7859 23.6783 19.6675 23.8273 19.588C23.9762 19.5085 24.1439 19.4709 24.3125 19.4791C24.4811 19.4874 24.6443 19.5413 24.7847 19.635Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_893_173">
+                <rect width="56" height="56" fill="white" />
+              </clipPath>
+            </defs>
           </svg>
+          Watch Video
+        </button>
+      </div>
+      <div class="hero-timer">
+        <div class="timer__value">1d</div>
+        <div class="timer__value">23h</div>
+        <div class="timer__value">59m</div>
+        <div class="timer__value">59s</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="category">
+    <div class="container">
+      <h4 class="category__title">
+        <span class="marked--blue">Explore</span> By Category
+      </h4>
+      <div class="category-block-wrapper">
+        <div class="category-block">
+          <div class="category-block__img-wrapper">
+            <img class="category-block__img" src="./images/dj-mixer.svg" alt="DJ Mixer" />
+          </div>
+          <h5 class="category-block__title">Pop</h5>
+          <p class="category-block__paragraph">
+            Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
+            vitae
+          </p>
+          <div class="category-block__bg bgc--yellow"></div>
+        </div>
+        <div class="category-block">
+          <div class="category-block__img-wrapper">
+            <img class="category-block__img" src="./images/bagpipes.svg" alt="Bagpipes" />
+          </div>
+          <h5 class="category-block__title">Folk</h5>
+          <p class="category-block__paragraph">
+            Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
+            vitae
+          </p>
+          <div class="category-block__bg bgc--red"></div>
+        </div>
+        <div class="category-block is--active">
+          <div class="category-block__img-wrapper">
+            <img class="category-block__img" src="./images/saxophone.svg" alt="Saxophone" />
+          </div>
+          <h5 class="category-block__title">Instrumental</h5>
+          <p class="category-block__paragraph">
+            Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
+            vitae
+          </p>
+          <div class="category-block__bg bgc--blue"></div>
+        </div>
+        <div class="category-block">
+          <div class="category-block__img-wrapper">
+            <img class="category-block__img" src="./images/guitar.svg" alt="Guitar" />
+          </div>
+          <h5 class="category-block__title">Rock</h5>
+          <p class="category-block__paragraph">
+            Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
+            vitae
+          </p>
+          <div class="category-block__bg bgc--pink"></div>
+        </div>
+        <div class="category-block">
+          <div class="category-block__img-wrapper">
+            <img class="category-block__img" src="./images/trumpet.svg" alt="Jazz" />
+          </div>
+          <h5 class="category-block__title">Jazz</h5>
+          <p class="category-block__paragraph">
+            Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
+            vitae
+          </p>
+          <div class="category-block__bg bgc--light-blue"></div>
         </div>
       </div>
-    </header>
-    <div class="hero">
-      <img
-        class="hero__background"
-        src="./images/hero-bg.png"
-        alt="Background"
-      />
-      <div class="container">
-        <h1 class="hero-title">
-          The Best Experience Of <span class="title--marked">Music</span> In
-          2021
-        </h1>
-        <p class="hero-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          vitae ligula placerat, eleifend ex non, vehicula libero. Suspendisse
-          eget tellus lectus.
-        </p>
-        <div class="hero-buttons">
-          <button class="btn btn--red">Get Started</button>
-          <button class="btn btn--transperant hero__button">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 56 56"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_893_173)">
-                <path
-                  d="M28.0001 51.3333C15.1131 51.3333 4.66675 40.887 4.66675 28C4.66675 15.113 15.1131 4.66663 28.0001 4.66663C40.8871 4.66663 51.3334 15.113 51.3334 28C51.3334 40.887 40.8871 51.3333 28.0001 51.3333ZM28.0001 46.6666C32.9508 46.6666 37.6987 44.7 41.1994 41.1993C44.7001 37.6986 46.6668 32.9507 46.6668 28C46.6668 23.0493 44.7001 18.3013 41.1994 14.8006C37.6987 11.3 32.9508 9.33329 28.0001 9.33329C23.0494 9.33329 18.3014 11.3 14.8008 14.8006C11.3001 18.3013 9.33342 23.0493 9.33342 28C9.33342 32.9507 11.3001 37.6986 14.8008 41.1993C18.3014 44.7 23.0494 46.6666 28.0001 46.6666ZM24.7847 19.635L36.1691 27.223C36.2971 27.3082 36.4021 27.4237 36.4747 27.5592C36.5473 27.6948 36.5853 27.8462 36.5853 28C36.5853 28.1537 36.5473 28.3051 36.4747 28.4407C36.4021 28.5763 36.2971 28.6918 36.1691 28.777L24.7824 36.365C24.642 36.458 24.479 36.5114 24.3108 36.5193C24.1425 36.5273 23.9753 36.4895 23.8267 36.4101C23.6782 36.3307 23.5539 36.2126 23.467 36.0682C23.3802 35.9239 23.334 35.7587 23.3334 35.5903V20.4096C23.3337 20.2408 23.3798 20.0752 23.4668 19.9305C23.5538 19.7859 23.6783 19.6675 23.8273 19.588C23.9762 19.5085 24.1439 19.4709 24.3125 19.4791C24.4811 19.4874 24.6443 19.5413 24.7847 19.635Z"
-                  fill="white"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_893_173">
-                  <rect width="56" height="56" fill="white" />
-                </clipPath>
-              </defs>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="info">
+      <div class="info-block">
+        <div class="info-block__text">
+          <h3 class="info-block__title">About music</h3>
+          <p class="info-block__paragraph">
+            Fusce justo mi, vehicula id arcu et, dapibus tristique lectus.
+            Vivamus a elit sodales, tincidunt nunc non, maximus lacus. Fusce a
+            augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus
+            non neque suscipit luctus. Mauris et erat id ipsum condimentum
+            cursus. Sed tempus enim non massa mattis iaculis. In quis massa
+            risus
+          </p>
+          <button class="btn">
+            Learn More
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.172 6.99998L6.808 1.63598L8.222 0.221985L16 7.99998L8.222 15.778L6.808 14.364L12.172 8.99998H0V6.99998H12.172Z"
+                fill="white" />
             </svg>
-            Watch Video
           </button>
         </div>
-        <div class="hero-timer">
-          <div class="timer__value">1d</div>
-          <div class="timer__value">23h</div>
-          <div class="timer__value">59m</div>
-          <div class="timer__value">59s</div>
+        <div class="info-block__img-wrapper reversed">
+          <img src="./images/about--music.png" alt="About Music" class="info-block__img" />
         </div>
       </div>
-    </div>
-
-    <div class="category">
-      <div class="container">
-        <h4 class="category__title">
-          <span class="marked--blue">Explore</span> By Category
-        </h4>
-        <div class="category-block-wrapper">
-          <div class="category-block">
-            <div class="category-block__img-wrapper">
-              <img
-                class="category-block__img"
-                src="./images/dj-mixer.svg"
-                alt="DJ Mixer"
-              />
-            </div>
-            <h5 class="category-block__title">Pop</h5>
-            <p class="category-block__paragraph">
-              Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
-              vitae
-            </p>
-            <div class="category-block__bg bgc--yellow"></div>
-          </div>
-          <div class="category-block">
-            <div class="category-block__img-wrapper">
-              <img
-                class="category-block__img"
-                src="./images/bagpipes.svg"
-                alt="Bagpipes"
-              />
-            </div>
-            <h5 class="category-block__title">Folk</h5>
-            <p class="category-block__paragraph">
-              Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
-              vitae
-            </p>
-            <div class="category-block__bg bgc--red"></div>
-          </div>
-          <div class="category-block is--active">
-            <div class="category-block__img-wrapper">
-              <img
-                class="category-block__img"
-                src="./images/saxophone.svg"
-                alt="Saxophone"
-              />
-            </div>
-            <h5 class="category-block__title">Instrumental</h5>
-            <p class="category-block__paragraph">
-              Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
-              vitae
-            </p>
-            <div class="category-block__bg bgc--blue"></div>
-          </div>
-          <div class="category-block">
-            <div class="category-block__img-wrapper">
-              <img
-                class="category-block__img"
-                src="./images/guitar.svg"
-                alt="Guitar"
-              />
-            </div>
-            <h5 class="category-block__title">Rock</h5>
-            <p class="category-block__paragraph">
-              Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
-              vitae
-            </p>
-            <div class="category-block__bg bgc--pink"></div>
-          </div>
-          <div class="category-block">
-            <div class="category-block__img-wrapper">
-              <img
-                class="category-block__img"
-                src="./images/trumpet.svg"
-                alt="Jazz"
-              />
-            </div>
-            <h5 class="category-block__title">Jazz</h5>
-            <p class="category-block__paragraph">
-              Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
-              vitae
-            </p>
-            <div class="category-block__bg bgc--light-blue"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="info">
-        <div class="info-block">
-          <div class="info-block__text">
-            <h3 class="info-block__title">About music</h3>
-            <p class="info-block__paragraph">
-              Fusce justo mi, vehicula id arcu et, dapibus tristique lectus.
-              Vivamus a elit sodales, tincidunt nunc non, maximus lacus. Fusce a
-              augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus
-              non neque suscipit luctus. Mauris et erat id ipsum condimentum
-              cursus. Sed tempus enim non massa mattis iaculis. In quis massa
-              risus
-            </p>
-            <button class="btn">
-              Learn More
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.172 6.99998L6.808 1.63598L8.222 0.221985L16 7.99998L8.222 15.778L6.808 14.364L12.172 8.99998H0V6.99998H12.172Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-          </div>
-          <div class="info-block__img-wrapper reversed">
-            <img
-              src="./images/about--music.png"
-              alt="About Music"
-              class="info-block__img"
-            />
-          </div>
-        </div>
-        <div class="info-block">
-          <div class="info-block__text">
-            <h3 class="info-block__title">Singers</h3>
-            <p class="info-block__paragraph">
-              Fusce justo mi, vehicula id arcu et, dapibus tristique lectus.
-              Vivamus a elit sodales, tincidunt nunc non, maximus lacus. Fusce a
-              augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus
-              non neque suscipit luctus. Mauris et erat id ipsum condimentum
-              cursus. Sed tempus enim non massa mattis iaculis. In quis massa
-              risus
-            </p>
-            <button class="btn">
-              View All Singers
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.172 6.99998L6.808 1.63598L8.222 0.221985L16 7.99998L8.222 15.778L6.808 14.364L12.172 8.99998H0V6.99998H12.172Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-          </div>
-          <div class="info-block__img-wrapper">
-            <img
-              src="./images/singers.png"
-              alt="Singers"
-              class="info-block__img"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="schedule">
-        <h3 class="schedule__title">Event Schedule</h3>
-        <div class="pop-up">
-          <div class="pop-up__el">Day 1</div>
-          <svg
-            width="12"
-            height="12"
-            viewBox="0 0 8 8"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7.76375 1.65551C8.07875 1.99628 8.07875 2.54888 7.76375 2.88965L4.5704 6.34429C4.25537 6.68511 3.74464 6.68511 3.42961 6.34429L0.236259 2.88974C0.0790314 2.71951 -4.78938e-08 2.49558 -3.81498e-08 2.27267C-2.84075e-08 2.04979 0.0789151 1.82588 0.236212 1.65565C0.551248 1.31483 1.06201 1.31479 1.37705 1.6556L3.19335 3.62045L4 4.51597L4.80666 3.62043L6.62296 1.65551C6.938 1.3147 7.44872 1.3147 7.76375 1.65551Z"
-              fill="#222222"
-            />
-          </svg>
-        </div>
-        <div class="table">
-          <h4 class="table__title">11:00 AM to 12:00 PM</h4>
-          <p class="table__text">
-            Vestibulum vel eros vel metus lacinia feugiat a nec metus.
+      <div class="info-block">
+        <div class="info-block__text">
+          <h3 class="info-block__title">Singers</h3>
+          <p class="info-block__paragraph">
+            Fusce justo mi, vehicula id arcu et, dapibus tristique lectus.
+            Vivamus a elit sodales, tincidunt nunc non, maximus lacus. Fusce a
+            augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus
+            non neque suscipit luctus. Mauris et erat id ipsum condimentum
+            cursus. Sed tempus enim non massa mattis iaculis. In quis massa
+            risus
           </p>
-          <div class="table__author">
+          <button class="btn">
+            View All Singers
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.172 6.99998L6.808 1.63598L8.222 0.221985L16 7.99998L8.222 15.778L6.808 14.364L12.172 8.99998H0V6.99998H12.172Z"
+                fill="white" />
+            </svg>
+          </button>
+        </div>
+        <div class="info-block__img-wrapper">
+          <img src="./images/singers.png" alt="Singers" class="info-block__img" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="schedule">
+      <h3 class="schedule__title">Event Schedule</h3>
+      <div class="pop-up">
+        <div class="pop-up__el">Day 1</div>
+        <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7.76375 1.65551C8.07875 1.99628 8.07875 2.54888 7.76375 2.88965L4.5704 6.34429C4.25537 6.68511 3.74464 6.68511 3.42961 6.34429L0.236259 2.88974C0.0790314 2.71951 -4.78938e-08 2.49558 -3.81498e-08 2.27267C-2.84075e-08 2.04979 0.0789151 1.82588 0.236212 1.65565C0.551248 1.31483 1.06201 1.31479 1.37705 1.6556L3.19335 3.62045L4 4.51597L4.80666 3.62043L6.62296 1.65551C6.938 1.3147 7.44872 1.3147 7.76375 1.65551Z"
+            fill="#222222" />
+        </svg>
+      </div>
+      <div class="table">
+        <h4 class="table__title">11:00 AM to 12:00 PM</h4>
+        <p class="table__text">
+          Vestibulum vel eros vel metus lacinia feugiat a nec metus.
+        </p>
+        <div class="table__author">
+          <div class="author">
+            <img src="./images/avatar__yui-ronald.png" alt="Yui Ronald avatar" />
+            <div class="author__description">
+              <div class="description__name">Yui Ronald</div>
+              <div class="description__id">Booth: <span>2F12</span></div>
+            </div>
+          </div>
+          <div class="author__status status--old">Preview</div>
+        </div>
+      </div>
+      <div class="table">
+        <h4 class="table__title">12:00 PM to 03:00 PM</h4>
+        <p class="table__text">
+          Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
+          vitae, fringilla id magna. Vestibulum ornare eget urna nec pulvinar.
+          Praesent porttitor convallis blandit. Fusce vel egestas dolor. Donec
+          eu augue enim. Donec rutrum non lacus ac rhoncus. Morbi quis luctus
+          leo, nec cursus ex.
+        </p>
+        <div class="table__author">
+          <div class="author-wrapper">
             <div class="author">
-              <img
-                src="./images/avatar__yui-ronald.png"
-                alt="Yui Ronald avatar"
-              />
+              <img src="./images/avatar__yui-ronald.png" alt="Yui Ronald avatar" />
               <div class="author__description">
                 <div class="description__name">Yui Ronald</div>
                 <div class="description__id">Booth: <span>2F12</span></div>
               </div>
             </div>
-            <div class="author__status status--old">Preview</div>
-          </div>
-        </div>
-        <div class="table">
-          <h4 class="table__title">12:00 PM to 03:00 PM</h4>
-          <p class="table__text">
-            Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
-            vitae, fringilla id magna. Vestibulum ornare eget urna nec pulvinar.
-            Praesent porttitor convallis blandit. Fusce vel egestas dolor. Donec
-            eu augue enim. Donec rutrum non lacus ac rhoncus. Morbi quis luctus
-            leo, nec cursus ex.
-          </p>
-          <div class="table__author">
-            <div class="author-wrapper">
-              <div class="author">
-                <img
-                  src="./images/avatar__yui-ronald.png"
-                  alt="Yui Ronald avatar"
-                />
-                <div class="author__description">
-                  <div class="description__name">Yui Ronald</div>
-                  <div class="description__id">Booth: <span>2F12</span></div>
-                </div>
-              </div>
-              <div class="author">
-                <img
-                  src="./images/avatar__yui-ronald.png"
-                  alt="Yui Ronald avatar"
-                />
-                <div class="author__description">
-                  <div class="description__name">Yui Ronald</div>
-                  <div class="description__id">Booth: <span>2F12</span></div>
-                </div>
-              </div>
-              <div class="author">
-                <img
-                  src="./images/avatar__yui-ronald.png"
-                  alt="Yui Ronald avatar"
-                />
-                <div class="author__description">
-                  <div class="description__name">Yui Ronald</div>
-                  <div class="description__id">Booth: <span>2F12</span></div>
-                </div>
+            <div class="author">
+              <img src="./images/avatar__yui-ronald.png" alt="Yui Ronald avatar" />
+              <div class="author__description">
+                <div class="description__name">Yui Ronald</div>
+                <div class="description__id">Booth: <span>2F12</span></div>
               </div>
             </div>
-            <div class="author__status status--live text--red">Live</div>
-          </div>
-        </div>
-        <div class="table">
-          <h4 class="table__title">03:00 PM to 04:00 PM</h4>
-          <p class="table__text">
-            Vestibulum vel eros vel metus lacinia feugiat a nec metus.
-          </p>
-          <div class="table__author">
-            <div class="author-wrapper">
-              <div class="author">
-                <img
-                  src="./images/avatar__yui-ronald.png"
-                  alt="Yui Ronald avatar"
-                />
-                <div class="author__description">
-                  <div class="description__name">Yui Ronald</div>
-                  <div class="description__id">Booth: <span>2F12</span></div>
-                </div>
-              </div>
-              <div class="author">
-                <img
-                  src="./images/avatar__yui-ronald.png"
-                  alt="Yui Ronald avatar"
-                />
-                <div class="author__description">
-                  <div class="description__name">Yui Ronald</div>
-                  <div class="description__id">Booth: <span>2F12</span></div>
-                </div>
+            <div class="author">
+              <img src="./images/avatar__yui-ronald.png" alt="Yui Ronald avatar" />
+              <div class="author__description">
+                <div class="description__name">Yui Ronald</div>
+                <div class="description__id">Booth: <span>2F12</span></div>
               </div>
             </div>
-            <div class="author__status status--coming">Upcoming</div>
           </div>
+          <div class="author__status status--live text--red">Live</div>
+        </div>
+      </div>
+      <div class="table">
+        <h4 class="table__title">03:00 PM to 04:00 PM</h4>
+        <p class="table__text">
+          Vestibulum vel eros vel metus lacinia feugiat a nec metus.
+        </p>
+        <div class="table__author">
+          <div class="author-wrapper">
+            <div class="author">
+              <img src="./images/avatar__yui-ronald.png" alt="Yui Ronald avatar" />
+              <div class="author__description">
+                <div class="description__name">Yui Ronald</div>
+                <div class="description__id">Booth: <span>2F12</span></div>
+              </div>
+            </div>
+            <div class="author">
+              <img src="./images/avatar__yui-ronald.png" alt="Yui Ronald avatar" />
+              <div class="author__description">
+                <div class="description__name">Yui Ronald</div>
+                <div class="description__id">Booth: <span>2F12</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="author__status status--coming">Upcoming</div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="container">
-      <section class="pricing">
-        <h3 class="pricing__title">Choose a Tier that’s right for you</h3>
-        <div class="pricing-blocks__wrapper">
-          <div class="pricing-block">
-            <div class="line line--black"></div>
-            <h4 class="pricing-block__title">Basic</h4>
-            <span class="pricing-block__price">$100</span>
-            <ul class="terms-list">
-              <li class="terms-list__el included">1 Seat Available</li>
-              <li class="terms-list__el">Access to Wifi Router</li>
-              <li class="terms-list__el">Free Food & Coffee</li>
-            </ul>
-            <button class="btn btn--bordered">Get Tickets</button>
-          </div>
-          <div class="pricing-block">
-            <div class="line line--blue"></div>
-            <h4 class="pricing-block__title text--blue">Standart</h4>
-            <span class="pricing-block__price text--blue">$150</span>
-            <ul class="terms-list">
-              <li class="terms-list__el included">1 Seat Available</li>
-              <li class="terms-list__el included">Access to Wifi Router</li>
-              <li class="terms-list__el">Free Food & Coffee</li>
-            </ul>
-            <button class="btn">Get Tickets</button>
-          </div>
-          <div class="pricing-block">
-            <div class="line line--red"></div>
-            <h4 class="pricing-block__title text--red">Premium</h4>
-            <span class="pricing-block__price text--red">$200</span>
-            <ul class="terms-list">
-              <li class="terms-list__el included">1 Seat Available</li>
-              <li class="terms-list__el included">Access to Wifi Router</li>
-              <li class="terms-list__el included">Free Food & Coffee</li>
-            </ul>
-            <button class="btn btn--bordered">Get Tickets</button>
-          </div>
+  <div class="container">
+    <section class="pricing">
+      <h3 class="pricing__title">Choose a Tier that’s right for you</h3>
+      <div class="pricing-blocks__wrapper">
+        <div class="pricing-block">
+          <div class="line line--black"></div>
+          <h4 class="pricing-block__title">Basic</h4>
+          <span class="pricing-block__price">$100</span>
+          <ul class="terms-list">
+            <li class="terms-list__el included">1 Seat Available</li>
+            <li class="terms-list__el">Access to Wifi Router</li>
+            <li class="terms-list__el">Free Food & Coffee</li>
+          </ul>
+          <button class="btn btn--bordered">Get Tickets</button>
         </div>
-      </section>
-    </div>
-
-    <div class="container">
-      <section class="sponsors-wrapper">
-        <h3 class="sponsors__title">Our Sponsors</h3>
-        <div class="sponsors-block">
-          <img
-            src="./images/google-icon.png"
-            alt="Google"
-            class="sponsors__image"
-          />
-          <img
-            src="./images/google-icon.png"
-            alt="Google"
-            class="sponsors__image"
-          />
-          <img
-            src="./images/google-icon.png"
-            alt="Google"
-            class="sponsors__image"
-          />
-          <img
-            src="./images/google-icon.png"
-            alt="Google"
-            class="sponsors__image"
-          />
-          <img
-            src="./images/google-icon.png"
-            alt="Google"
-            class="sponsors__image"
-          />
-          <img
-            src="./images/google-icon.png"
-            alt="Google"
-            class="sponsors__image"
-          />
-          <img
-            src="./images/google-icon.png"
-            alt="Google"
-            class="sponsors__image"
-          />
-          <img
-            src="./images/google-icon.png"
-            alt="Google"
-            class="sponsors__image"
-          />
+        <div class="pricing-block">
+          <div class="line line--blue"></div>
+          <h4 class="pricing-block__title text--blue">Standart</h4>
+          <span class="pricing-block__price text--blue">$150</span>
+          <ul class="terms-list">
+            <li class="terms-list__el included">1 Seat Available</li>
+            <li class="terms-list__el included">Access to Wifi Router</li>
+            <li class="terms-list__el">Free Food & Coffee</li>
+          </ul>
+          <button class="btn">Get Tickets</button>
         </div>
-        <button class="btn">Become a Sponsor</button>
-      </section>
-    </div>
-
-    <div class="container">
-      <div class="quote">
-        <h3 class="quote__title">Testimonials</h3>
-        <div class="quote-block">
-          <p class="quote__text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </p>
-          <img
-            src="./images/avatar-1.png"
-            alt="Authors photo"
-            class="quote__photo"
-          />
-          <h5 class="quote__name">Johnny Doe</h5>
-          <h6 class="quote__subtitle"><a>ipsum.com</a></h6>
-        </div>
-        <div class="quote-block">
-          <p class="quote__text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </p>
-          <img
-            src="./images/avatar-2.png"
-            alt="Authors photo"
-            class="quote__photo"
-          />
-          <h5 class="quote__name">Ellie James</h5>
-          <h6 class="quote__subtitle"><a>ipsum.com</a></h6>
-        </div>
-        <div class="quote-block">
-          <p class="quote__text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </p>
-          <img
-            src="./images/avatar-3.png"
-            alt="Authors photo"
-            class="quote__photo"
-          />
-          <h5 class="quote__name">Myne Barack</h5>
-          <h6 class="quote__subtitle"><a>ipsum.com</a></h6>
-        </div>
-      </div>
-    </div>
-
-    <section class="shots">
-      <div class="container">
-        <h2 class="shots__title">See our Best Shots</h2>
-      </div>
-      <div class="shots-wrapper splide">
-        <div class="splide__track">
-          <div class="splide__list">
-            <div class="shots__shot shot splide__slide">
-              <div class="shot__image-wrapper">
-                <img
-                  src="./images/shot-2.png"
-                  alt="our shot"
-                  class="shot__image"
-                />
-              </div>
-              <div class="shot__content">
-                <div class="shot__feedback">
-                  <button class="shot__likes" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_411)">
-                        <path
-                          d="M12.001 4.52898C14.35 2.41998 17.98 2.48998 20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.993L11.999 21.485L3.52101 12.993C1.41701 10.637 1.49601 7.01898 3.75701 4.75698C6.02201 2.49298 9.64501 2.41698 12.001 4.52898V4.52898ZM18.827 6.16998C17.327 4.66798 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09101 4.60598 6.67601 4.66798 5.17201 6.17198C3.68201 7.66198 3.60701 10.047 4.98001 11.623L12 18.654L19.02 11.624C20.394 10.047 20.319 7.66498 18.827 6.16998V6.16998Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_411">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>412</span>
-                  </button>
-                  <button class="shot__comments" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_438)">
-                        <path
-                          d="M10 3H14C16.1217 3 18.1566 3.84285 19.6569 5.34315C21.1571 6.84344 22 8.87827 22 11C22 13.1217 21.1571 15.1566 19.6569 16.6569C18.1566 18.1571 16.1217 19 14 19V22.5C9 20.5 2 17.5 2 11C2 8.87827 2.84285 6.84344 4.34315 5.34315C5.84344 3.84285 7.87827 3 10 3ZM12 17H14C14.7879 17 15.5681 16.8448 16.2961 16.5433C17.0241 16.2417 17.6855 15.7998 18.2426 15.2426C18.7998 14.6855 19.2417 14.0241 19.5433 13.2961C19.8448 12.5681 20 11.7879 20 11C20 10.2121 19.8448 9.43185 19.5433 8.7039C19.2417 7.97595 18.7998 7.31451 18.2426 6.75736C17.6855 6.20021 17.0241 5.75825 16.2961 5.45672C15.5681 5.15519 14.7879 5 14 5H10C8.4087 5 6.88258 5.63214 5.75736 6.75736C4.63214 7.88258 4 9.4087 4 11C4 14.61 6.462 16.966 12 19.48V17Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_438">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>140</span>
-                  </button>
-                </div>
-                <h6 class="shot__title">Lorem Ipsum Amet</h6>
-                <p class="shot__hashtags hashtags">
-                  <a href="#" role="link" class="hashtags__tag">#music</a>
-                  <a href="#" role="link" class="hashtags__tag">#concert</a>
-                  <a href="#" role="link" class="hashtags__tag">#conference</a>
-                  <a href="#" role="link" class="hashtags__tag">#london</a>
-                  <a href="#" role="link" class="hashtags__tag">#event</a>
-                  <a href="#" role="link" class="hashtags__tag">#artist</a>
-                  <a href="#" role="link" class="hashtags__tag">#dj</a>
-                  <a href="#" role="link" class="hashtags__tag">#soundtrack</a>
-                  <a href="#" role="link" class="hashtags__tag">#dance</a>
-                </p>
-              </div>
-            </div>
-            <div class="shots__shot shot splide__slide">
-              <div class="shot__image-wrapper">
-                <img
-                  src="./images/shot-3.png"
-                  alt="our shot"
-                  class="shot__image"
-                />
-              </div>
-              <div class="shot__content">
-                <div class="shot__feedback">
-                  <button class="shot__likes" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_411)">
-                        <path
-                          d="M12.001 4.52898C14.35 2.41998 17.98 2.48998 20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.993L11.999 21.485L3.52101 12.993C1.41701 10.637 1.49601 7.01898 3.75701 4.75698C6.02201 2.49298 9.64501 2.41698 12.001 4.52898V4.52898ZM18.827 6.16998C17.327 4.66798 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09101 4.60598 6.67601 4.66798 5.17201 6.17198C3.68201 7.66198 3.60701 10.047 4.98001 11.623L12 18.654L19.02 11.624C20.394 10.047 20.319 7.66498 18.827 6.16998V6.16998Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_411">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>412</span>
-                  </button>
-                  <button class="shot__comments" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_438)">
-                        <path
-                          d="M10 3H14C16.1217 3 18.1566 3.84285 19.6569 5.34315C21.1571 6.84344 22 8.87827 22 11C22 13.1217 21.1571 15.1566 19.6569 16.6569C18.1566 18.1571 16.1217 19 14 19V22.5C9 20.5 2 17.5 2 11C2 8.87827 2.84285 6.84344 4.34315 5.34315C5.84344 3.84285 7.87827 3 10 3ZM12 17H14C14.7879 17 15.5681 16.8448 16.2961 16.5433C17.0241 16.2417 17.6855 15.7998 18.2426 15.2426C18.7998 14.6855 19.2417 14.0241 19.5433 13.2961C19.8448 12.5681 20 11.7879 20 11C20 10.2121 19.8448 9.43185 19.5433 8.7039C19.2417 7.97595 18.7998 7.31451 18.2426 6.75736C17.6855 6.20021 17.0241 5.75825 16.2961 5.45672C15.5681 5.15519 14.7879 5 14 5H10C8.4087 5 6.88258 5.63214 5.75736 6.75736C4.63214 7.88258 4 9.4087 4 11C4 14.61 6.462 16.966 12 19.48V17Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_438">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>140</span>
-                  </button>
-                </div>
-                <h6 class="shot__title">Lorem Ipsum Amet</h6>
-                <p class="shot__hashtags hashtags">
-                  <a href="#" role="link" class="hashtags__tag">#music</a>
-                  <a href="#" role="link" class="hashtags__tag">#concert</a>
-                  <a href="#" role="link" class="hashtags__tag">#conference</a>
-                  <a href="#" role="link" class="hashtags__tag">#london</a>
-                  <a href="#" role="link" class="hashtags__tag">#event</a>
-                  <a href="#" role="link" class="hashtags__tag">#artist</a>
-                  <a href="#" role="link" class="hashtags__tag">#dj</a>
-                  <a href="#" role="link" class="hashtags__tag">#soundtrack</a>
-                  <a href="#" role="link" class="hashtags__tag">#dance</a>
-                </p>
-              </div>
-            </div>
-            <div class="shots__shot shot splide__slide">
-              <div class="shot__image-wrapper">
-                <img
-                  src="./images/shot-1.png"
-                  alt="our shot"
-                  class="shot__image"
-                />
-              </div>
-              <div class="shot__content">
-                <div class="shot__feedback">
-                  <button class="shot__likes" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_411)">
-                        <path
-                          d="M12.001 4.52898C14.35 2.41998 17.98 2.48998 20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.993L11.999 21.485L3.52101 12.993C1.41701 10.637 1.49601 7.01898 3.75701 4.75698C6.02201 2.49298 9.64501 2.41698 12.001 4.52898V4.52898ZM18.827 6.16998C17.327 4.66798 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09101 4.60598 6.67601 4.66798 5.17201 6.17198C3.68201 7.66198 3.60701 10.047 4.98001 11.623L12 18.654L19.02 11.624C20.394 10.047 20.319 7.66498 18.827 6.16998V6.16998Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_411">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>412</span>
-                  </button>
-                  <button class="shot__comments" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_438)">
-                        <path
-                          d="M10 3H14C16.1217 3 18.1566 3.84285 19.6569 5.34315C21.1571 6.84344 22 8.87827 22 11C22 13.1217 21.1571 15.1566 19.6569 16.6569C18.1566 18.1571 16.1217 19 14 19V22.5C9 20.5 2 17.5 2 11C2 8.87827 2.84285 6.84344 4.34315 5.34315C5.84344 3.84285 7.87827 3 10 3ZM12 17H14C14.7879 17 15.5681 16.8448 16.2961 16.5433C17.0241 16.2417 17.6855 15.7998 18.2426 15.2426C18.7998 14.6855 19.2417 14.0241 19.5433 13.2961C19.8448 12.5681 20 11.7879 20 11C20 10.2121 19.8448 9.43185 19.5433 8.7039C19.2417 7.97595 18.7998 7.31451 18.2426 6.75736C17.6855 6.20021 17.0241 5.75825 16.2961 5.45672C15.5681 5.15519 14.7879 5 14 5H10C8.4087 5 6.88258 5.63214 5.75736 6.75736C4.63214 7.88258 4 9.4087 4 11C4 14.61 6.462 16.966 12 19.48V17Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_438">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>140</span>
-                  </button>
-                </div>
-                <h6 class="shot__title">Lorem Ipsum Amet</h6>
-                <p class="shot__hashtags hashtags">
-                  <a href="#" role="link" class="hashtags__tag">#music</a>
-                  <a href="#" role="link" class="hashtags__tag">#concert</a>
-                  <a href="#" role="link" class="hashtags__tag">#conference</a>
-                  <a href="#" role="link" class="hashtags__tag">#london</a>
-                  <a href="#" role="link" class="hashtags__tag">#event</a>
-                  <a href="#" role="link" class="hashtags__tag">#artist</a>
-                  <a href="#" role="link" class="hashtags__tag">#dj</a>
-                  <a href="#" role="link" class="hashtags__tag">#soundtrack</a>
-                  <a href="#" role="link" class="hashtags__tag">#dance</a>
-                </p>
-              </div>
-            </div>
-            <div class="shots__shot shot splide__slide">
-              <div class="shot__image-wrapper">
-                <img
-                  src="./images/shot-2.png"
-                  alt="our shot"
-                  class="shot__image"
-                />
-              </div>
-              <div class="shot__content">
-                <div class="shot__feedback">
-                  <button class="shot__likes" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_411)">
-                        <path
-                          d="M12.001 4.52898C14.35 2.41998 17.98 2.48998 20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.993L11.999 21.485L3.52101 12.993C1.41701 10.637 1.49601 7.01898 3.75701 4.75698C6.02201 2.49298 9.64501 2.41698 12.001 4.52898V4.52898ZM18.827 6.16998C17.327 4.66798 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09101 4.60598 6.67601 4.66798 5.17201 6.17198C3.68201 7.66198 3.60701 10.047 4.98001 11.623L12 18.654L19.02 11.624C20.394 10.047 20.319 7.66498 18.827 6.16998V6.16998Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_411">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>412</span>
-                  </button>
-                  <button class="shot__comments" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_438)">
-                        <path
-                          d="M10 3H14C16.1217 3 18.1566 3.84285 19.6569 5.34315C21.1571 6.84344 22 8.87827 22 11C22 13.1217 21.1571 15.1566 19.6569 16.6569C18.1566 18.1571 16.1217 19 14 19V22.5C9 20.5 2 17.5 2 11C2 8.87827 2.84285 6.84344 4.34315 5.34315C5.84344 3.84285 7.87827 3 10 3ZM12 17H14C14.7879 17 15.5681 16.8448 16.2961 16.5433C17.0241 16.2417 17.6855 15.7998 18.2426 15.2426C18.7998 14.6855 19.2417 14.0241 19.5433 13.2961C19.8448 12.5681 20 11.7879 20 11C20 10.2121 19.8448 9.43185 19.5433 8.7039C19.2417 7.97595 18.7998 7.31451 18.2426 6.75736C17.6855 6.20021 17.0241 5.75825 16.2961 5.45672C15.5681 5.15519 14.7879 5 14 5H10C8.4087 5 6.88258 5.63214 5.75736 6.75736C4.63214 7.88258 4 9.4087 4 11C4 14.61 6.462 16.966 12 19.48V17Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_438">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>140</span>
-                  </button>
-                </div>
-                <h6 class="shot__title">Lorem Ipsum Amet</h6>
-                <p class="shot__hashtags hashtags">
-                  <a href="#" role="link" class="hashtags__tag">#music</a>
-                  <a href="#" role="link" class="hashtags__tag">#concert</a>
-                  <a href="#" role="link" class="hashtags__tag">#conference</a>
-                  <a href="#" role="link" class="hashtags__tag">#london</a>
-                  <a href="#" role="link" class="hashtags__tag">#event</a>
-                  <a href="#" role="link" class="hashtags__tag">#artist</a>
-                  <a href="#" role="link" class="hashtags__tag">#dj</a>
-                  <a href="#" role="link" class="hashtags__tag">#soundtrack</a>
-                  <a href="#" role="link" class="hashtags__tag">#dance</a>
-                </p>
-              </div>
-            </div>
-            <div class="shots__shot shot splide__slide">
-              <div class="shot__image-wrapper">
-                <img
-                  src="./images/shot-3.png"
-                  alt="our shot"
-                  class="shot__image"
-                />
-              </div>
-              <div class="shot__content">
-                <div class="shot__feedback">
-                  <button class="shot__likes" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_411)">
-                        <path
-                          d="M12.001 4.52898C14.35 2.41998 17.98 2.48998 20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.993L11.999 21.485L3.52101 12.993C1.41701 10.637 1.49601 7.01898 3.75701 4.75698C6.02201 2.49298 9.64501 2.41698 12.001 4.52898V4.52898ZM18.827 6.16998C17.327 4.66798 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09101 4.60598 6.67601 4.66798 5.17201 6.17198C3.68201 7.66198 3.60701 10.047 4.98001 11.623L12 18.654L19.02 11.624C20.394 10.047 20.319 7.66498 18.827 6.16998V6.16998Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_411">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>412</span>
-                  </button>
-                  <button class="shot__comments" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_438)">
-                        <path
-                          d="M10 3H14C16.1217 3 18.1566 3.84285 19.6569 5.34315C21.1571 6.84344 22 8.87827 22 11C22 13.1217 21.1571 15.1566 19.6569 16.6569C18.1566 18.1571 16.1217 19 14 19V22.5C9 20.5 2 17.5 2 11C2 8.87827 2.84285 6.84344 4.34315 5.34315C5.84344 3.84285 7.87827 3 10 3ZM12 17H14C14.7879 17 15.5681 16.8448 16.2961 16.5433C17.0241 16.2417 17.6855 15.7998 18.2426 15.2426C18.7998 14.6855 19.2417 14.0241 19.5433 13.2961C19.8448 12.5681 20 11.7879 20 11C20 10.2121 19.8448 9.43185 19.5433 8.7039C19.2417 7.97595 18.7998 7.31451 18.2426 6.75736C17.6855 6.20021 17.0241 5.75825 16.2961 5.45672C15.5681 5.15519 14.7879 5 14 5H10C8.4087 5 6.88258 5.63214 5.75736 6.75736C4.63214 7.88258 4 9.4087 4 11C4 14.61 6.462 16.966 12 19.48V17Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_438">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>140</span>
-                  </button>
-                </div>
-                <h6 class="shot__title">Lorem Ipsum Amet</h6>
-                <p class="shot__hashtags hashtags">
-                  <a href="#" role="link" class="hashtags__tag">#music</a>
-                  <a href="#" role="link" class="hashtags__tag">#concert</a>
-                  <a href="#" role="link" class="hashtags__tag">#conference</a>
-                  <a href="#" role="link" class="hashtags__tag">#london</a>
-                  <a href="#" role="link" class="hashtags__tag">#event</a>
-                  <a href="#" role="link" class="hashtags__tag">#artist</a>
-                  <a href="#" role="link" class="hashtags__tag">#dj</a>
-                  <a href="#" role="link" class="hashtags__tag">#soundtrack</a>
-                  <a href="#" role="link" class="hashtags__tag">#dance</a>
-                </p>
-              </div>
-            </div>
-            <div class="shots__shot shot splide__slide">
-              <div class="shot__image-wrapper">
-                <img
-                  src="./images/shot-2.png"
-                  alt="our shot"
-                  class="shot__image"
-                />
-              </div>
-              <div class="shot__content">
-                <div class="shot__feedback">
-                  <button class="shot__likes" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_411)">
-                        <path
-                          d="M12.001 4.52898C14.35 2.41998 17.98 2.48998 20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.993L11.999 21.485L3.52101 12.993C1.41701 10.637 1.49601 7.01898 3.75701 4.75698C6.02201 2.49298 9.64501 2.41698 12.001 4.52898V4.52898ZM18.827 6.16998C17.327 4.66798 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09101 4.60598 6.67601 4.66798 5.17201 6.17198C3.68201 7.66198 3.60701 10.047 4.98001 11.623L12 18.654L19.02 11.624C20.394 10.047 20.319 7.66498 18.827 6.16998V6.16998Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_411">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>412</span>
-                  </button>
-                  <button class="shot__comments" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_438)">
-                        <path
-                          d="M10 3H14C16.1217 3 18.1566 3.84285 19.6569 5.34315C21.1571 6.84344 22 8.87827 22 11C22 13.1217 21.1571 15.1566 19.6569 16.6569C18.1566 18.1571 16.1217 19 14 19V22.5C9 20.5 2 17.5 2 11C2 8.87827 2.84285 6.84344 4.34315 5.34315C5.84344 3.84285 7.87827 3 10 3ZM12 17H14C14.7879 17 15.5681 16.8448 16.2961 16.5433C17.0241 16.2417 17.6855 15.7998 18.2426 15.2426C18.7998 14.6855 19.2417 14.0241 19.5433 13.2961C19.8448 12.5681 20 11.7879 20 11C20 10.2121 19.8448 9.43185 19.5433 8.7039C19.2417 7.97595 18.7998 7.31451 18.2426 6.75736C17.6855 6.20021 17.0241 5.75825 16.2961 5.45672C15.5681 5.15519 14.7879 5 14 5H10C8.4087 5 6.88258 5.63214 5.75736 6.75736C4.63214 7.88258 4 9.4087 4 11C4 14.61 6.462 16.966 12 19.48V17Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_438">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>140</span>
-                  </button>
-                </div>
-                <h6 class="shot__title">Lorem Ipsum Amet</h6>
-                <p class="shot__hashtags hashtags">
-                  <a href="#" role="link" class="hashtags__tag">#music</a>
-                  <a href="#" role="link" class="hashtags__tag">#concert</a>
-                  <a href="#" role="link" class="hashtags__tag">#conference</a>
-                  <a href="#" role="link" class="hashtags__tag">#london</a>
-                  <a href="#" role="link" class="hashtags__tag">#event</a>
-                  <a href="#" role="link" class="hashtags__tag">#artist</a>
-                  <a href="#" role="link" class="hashtags__tag">#dj</a>
-                  <a href="#" role="link" class="hashtags__tag">#soundtrack</a>
-                  <a href="#" role="link" class="hashtags__tag">#dance</a>
-                </p>
-              </div>
-            </div>
-            <div class="shots__shot shot splide__slide">
-              <div class="shot__image-wrapper">
-                <img
-                  src="./images/shot-3.png"
-                  alt="our shot"
-                  class="shot__image"
-                />
-              </div>
-              <div class="shot__content">
-                <div class="shot__feedback">
-                  <button class="shot__likes" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_411)">
-                        <path
-                          d="M12.001 4.52898C14.35 2.41998 17.98 2.48998 20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.993L11.999 21.485L3.52101 12.993C1.41701 10.637 1.49601 7.01898 3.75701 4.75698C6.02201 2.49298 9.64501 2.41698 12.001 4.52898V4.52898ZM18.827 6.16998C17.327 4.66798 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09101 4.60598 6.67601 4.66798 5.17201 6.17198C3.68201 7.66198 3.60701 10.047 4.98001 11.623L12 18.654L19.02 11.624C20.394 10.047 20.319 7.66498 18.827 6.16998V6.16998Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_411">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>412</span>
-                  </button>
-                  <button class="shot__comments" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_438)">
-                        <path
-                          d="M10 3H14C16.1217 3 18.1566 3.84285 19.6569 5.34315C21.1571 6.84344 22 8.87827 22 11C22 13.1217 21.1571 15.1566 19.6569 16.6569C18.1566 18.1571 16.1217 19 14 19V22.5C9 20.5 2 17.5 2 11C2 8.87827 2.84285 6.84344 4.34315 5.34315C5.84344 3.84285 7.87827 3 10 3ZM12 17H14C14.7879 17 15.5681 16.8448 16.2961 16.5433C17.0241 16.2417 17.6855 15.7998 18.2426 15.2426C18.7998 14.6855 19.2417 14.0241 19.5433 13.2961C19.8448 12.5681 20 11.7879 20 11C20 10.2121 19.8448 9.43185 19.5433 8.7039C19.2417 7.97595 18.7998 7.31451 18.2426 6.75736C17.6855 6.20021 17.0241 5.75825 16.2961 5.45672C15.5681 5.15519 14.7879 5 14 5H10C8.4087 5 6.88258 5.63214 5.75736 6.75736C4.63214 7.88258 4 9.4087 4 11C4 14.61 6.462 16.966 12 19.48V17Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_438">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>140</span>
-                  </button>
-                </div>
-                <h6 class="shot__title">Lorem Ipsum Amet</h6>
-                <p class="shot__hashtags hashtags">
-                  <a href="#" role="link" class="hashtags__tag">#music</a>
-                  <a href="#" role="link" class="hashtags__tag">#concert</a>
-                  <a href="#" role="link" class="hashtags__tag">#conference</a>
-                  <a href="#" role="link" class="hashtags__tag">#london</a>
-                  <a href="#" role="link" class="hashtags__tag">#event</a>
-                  <a href="#" role="link" class="hashtags__tag">#artist</a>
-                  <a href="#" role="link" class="hashtags__tag">#dj</a>
-                  <a href="#" role="link" class="hashtags__tag">#soundtrack</a>
-                  <a href="#" role="link" class="hashtags__tag">#dance</a>
-                </p>
-              </div>
-            </div>
-            <div class="shots__shot shot splide__slide">
-              <div class="shot__image-wrapper">
-                <img
-                  src="./images/shot-1.png"
-                  alt="our shot"
-                  class="shot__image"
-                />
-              </div>
-              <div class="shot__content">
-                <div class="shot__feedback">
-                  <button class="shot__likes" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_411)">
-                        <path
-                          d="M12.001 4.52898C14.35 2.41998 17.98 2.48998 20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.993L11.999 21.485L3.52101 12.993C1.41701 10.637 1.49601 7.01898 3.75701 4.75698C6.02201 2.49298 9.64501 2.41698 12.001 4.52898V4.52898ZM18.827 6.16998C17.327 4.66798 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09101 4.60598 6.67601 4.66798 5.17201 6.17198C3.68201 7.66198 3.60701 10.047 4.98001 11.623L12 18.654L19.02 11.624C20.394 10.047 20.319 7.66498 18.827 6.16998V6.16998Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_411">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>412</span>
-                  </button>
-                  <button class="shot__comments" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_438)">
-                        <path
-                          d="M10 3H14C16.1217 3 18.1566 3.84285 19.6569 5.34315C21.1571 6.84344 22 8.87827 22 11C22 13.1217 21.1571 15.1566 19.6569 16.6569C18.1566 18.1571 16.1217 19 14 19V22.5C9 20.5 2 17.5 2 11C2 8.87827 2.84285 6.84344 4.34315 5.34315C5.84344 3.84285 7.87827 3 10 3ZM12 17H14C14.7879 17 15.5681 16.8448 16.2961 16.5433C17.0241 16.2417 17.6855 15.7998 18.2426 15.2426C18.7998 14.6855 19.2417 14.0241 19.5433 13.2961C19.8448 12.5681 20 11.7879 20 11C20 10.2121 19.8448 9.43185 19.5433 8.7039C19.2417 7.97595 18.7998 7.31451 18.2426 6.75736C17.6855 6.20021 17.0241 5.75825 16.2961 5.45672C15.5681 5.15519 14.7879 5 14 5H10C8.4087 5 6.88258 5.63214 5.75736 6.75736C4.63214 7.88258 4 9.4087 4 11C4 14.61 6.462 16.966 12 19.48V17Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_438">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>140</span>
-                  </button>
-                </div>
-                <h6 class="shot__title">Lorem Ipsum Amet</h6>
-                <p class="shot__hashtags hashtags">
-                  <a href="#" role="link" class="hashtags__tag">#music</a>
-                  <a href="#" role="link" class="hashtags__tag">#concert</a>
-                  <a href="#" role="link" class="hashtags__tag">#conference</a>
-                  <a href="#" role="link" class="hashtags__tag">#london</a>
-                  <a href="#" role="link" class="hashtags__tag">#event</a>
-                  <a href="#" role="link" class="hashtags__tag">#artist</a>
-                  <a href="#" role="link" class="hashtags__tag">#dj</a>
-                  <a href="#" role="link" class="hashtags__tag">#soundtrack</a>
-                  <a href="#" role="link" class="hashtags__tag">#dance</a>
-                </p>
-              </div>
-            </div>
-            <div class="shots__shot shot splide__slide">
-              <div class="shot__image-wrapper">
-                <img
-                  src="./images/shot-2.png"
-                  alt="our shot"
-                  class="shot__image"
-                />
-              </div>
-              <div class="shot__content">
-                <div class="shot__feedback">
-                  <button class="shot__likes" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_411)">
-                        <path
-                          d="M12.001 4.52898C14.35 2.41998 17.98 2.48998 20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.993L11.999 21.485L3.52101 12.993C1.41701 10.637 1.49601 7.01898 3.75701 4.75698C6.02201 2.49298 9.64501 2.41698 12.001 4.52898V4.52898ZM18.827 6.16998C17.327 4.66798 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09101 4.60598 6.67601 4.66798 5.17201 6.17198C3.68201 7.66198 3.60701 10.047 4.98001 11.623L12 18.654L19.02 11.624C20.394 10.047 20.319 7.66498 18.827 6.16998V6.16998Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_411">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>412</span>
-                  </button>
-                  <button class="shot__comments" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_438)">
-                        <path
-                          d="M10 3H14C16.1217 3 18.1566 3.84285 19.6569 5.34315C21.1571 6.84344 22 8.87827 22 11C22 13.1217 21.1571 15.1566 19.6569 16.6569C18.1566 18.1571 16.1217 19 14 19V22.5C9 20.5 2 17.5 2 11C2 8.87827 2.84285 6.84344 4.34315 5.34315C5.84344 3.84285 7.87827 3 10 3ZM12 17H14C14.7879 17 15.5681 16.8448 16.2961 16.5433C17.0241 16.2417 17.6855 15.7998 18.2426 15.2426C18.7998 14.6855 19.2417 14.0241 19.5433 13.2961C19.8448 12.5681 20 11.7879 20 11C20 10.2121 19.8448 9.43185 19.5433 8.7039C19.2417 7.97595 18.7998 7.31451 18.2426 6.75736C17.6855 6.20021 17.0241 5.75825 16.2961 5.45672C15.5681 5.15519 14.7879 5 14 5H10C8.4087 5 6.88258 5.63214 5.75736 6.75736C4.63214 7.88258 4 9.4087 4 11C4 14.61 6.462 16.966 12 19.48V17Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_438">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>140</span>
-                  </button>
-                </div>
-                <h6 class="shot__title">Lorem Ipsum Amet</h6>
-                <p class="shot__hashtags hashtags">
-                  <a href="#" role="link" class="hashtags__tag">#music</a>
-                  <a href="#" role="link" class="hashtags__tag">#concert</a>
-                  <a href="#" role="link" class="hashtags__tag">#conference</a>
-                  <a href="#" role="link" class="hashtags__tag">#london</a>
-                  <a href="#" role="link" class="hashtags__tag">#event</a>
-                  <a href="#" role="link" class="hashtags__tag">#artist</a>
-                  <a href="#" role="link" class="hashtags__tag">#dj</a>
-                  <a href="#" role="link" class="hashtags__tag">#soundtrack</a>
-                  <a href="#" role="link" class="hashtags__tag">#dance</a>
-                </p>
-              </div>
-            </div>
-            <div class="shots__shot shot splide__slide">
-              <div class="shot__image-wrapper">
-                <img
-                  src="./images/shot-3.png"
-                  alt="our shot"
-                  class="shot__image"
-                />
-              </div>
-              <div class="shot__content">
-                <div class="shot__feedback">
-                  <button class="shot__likes" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_411)">
-                        <path
-                          d="M12.001 4.52898C14.35 2.41998 17.98 2.48998 20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.993L11.999 21.485L3.52101 12.993C1.41701 10.637 1.49601 7.01898 3.75701 4.75698C6.02201 2.49298 9.64501 2.41698 12.001 4.52898V4.52898ZM18.827 6.16998C17.327 4.66798 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09101 4.60598 6.67601 4.66798 5.17201 6.17198C3.68201 7.66198 3.60701 10.047 4.98001 11.623L12 18.654L19.02 11.624C20.394 10.047 20.319 7.66498 18.827 6.16998V6.16998Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_411">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>412</span>
-                  </button>
-                  <button class="shot__comments" type="button">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_893_438)">
-                        <path
-                          d="M10 3H14C16.1217 3 18.1566 3.84285 19.6569 5.34315C21.1571 6.84344 22 8.87827 22 11C22 13.1217 21.1571 15.1566 19.6569 16.6569C18.1566 18.1571 16.1217 19 14 19V22.5C9 20.5 2 17.5 2 11C2 8.87827 2.84285 6.84344 4.34315 5.34315C5.84344 3.84285 7.87827 3 10 3ZM12 17H14C14.7879 17 15.5681 16.8448 16.2961 16.5433C17.0241 16.2417 17.6855 15.7998 18.2426 15.2426C18.7998 14.6855 19.2417 14.0241 19.5433 13.2961C19.8448 12.5681 20 11.7879 20 11C20 10.2121 19.8448 9.43185 19.5433 8.7039C19.2417 7.97595 18.7998 7.31451 18.2426 6.75736C17.6855 6.20021 17.0241 5.75825 16.2961 5.45672C15.5681 5.15519 14.7879 5 14 5H10C8.4087 5 6.88258 5.63214 5.75736 6.75736C4.63214 7.88258 4 9.4087 4 11C4 14.61 6.462 16.966 12 19.48V17Z"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_893_438">
-                          <rect width="24" height="24" fill="#ffffff" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <span>140</span>
-                  </button>
-                </div>
-                <h6 class="shot__title">Lorem Ipsum Amet</h6>
-                <p class="shot__hashtags hashtags">
-                  <a href="#" role="link" class="hashtags__tag">#music</a>
-                  <a href="#" role="link" class="hashtags__tag">#concert</a>
-                  <a href="#" role="link" class="hashtags__tag">#conference</a>
-                  <a href="#" role="link" class="hashtags__tag">#london</a>
-                  <a href="#" role="link" class="hashtags__tag">#event</a>
-                  <a href="#" role="link" class="hashtags__tag">#artist</a>
-                  <a href="#" role="link" class="hashtags__tag">#dj</a>
-                  <a href="#" role="link" class="hashtags__tag">#soundtrack</a>
-                  <a href="#" role="link" class="hashtags__tag">#dance</a>
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="pricing-block">
+          <div class="line line--red"></div>
+          <h4 class="pricing-block__title text--red">Premium</h4>
+          <span class="pricing-block__price text--red">$200</span>
+          <ul class="terms-list">
+            <li class="terms-list__el included">1 Seat Available</li>
+            <li class="terms-list__el included">Access to Wifi Router</li>
+            <li class="terms-list__el included">Free Food & Coffee</li>
+          </ul>
+          <button class="btn btn--bordered">Get Tickets</button>
         </div>
       </div>
     </section>
+  </div>
 
-    <div class="container">
-      <div class="form-block">
-        <h3 class="form__title">Fill in your details</h3>
-        <form action="" method="get">
-          <div class="form__input-wrapper">
-            <label for="name" class="form__label">Name</label>
-            <input
-              type="text"
-              class="form__input"
-              id="name"
-              placeholder="John Doe"
-            />
-          </div>
-          <div class="form__input-wrapper">
-            <label for="email" class="form__label">Email</label>
-            <input
-              type="text"
-              class="form__input"
-              id="email"
-              placeholder="johndoe2347@mail.com"
-            />
-          </div>
-          <div class="form__input-wrapper">
-            <label for="message" class="form__label label--blue">Message</label>
-            <textarea
-              class="form__textarea"
-              name="message"
-              id="message"
-              cols="20"
-              rows="8"
-            >
-Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate vitae, fringilla id magna. Vestibulum ornare eget urna nec pulvinar. Praesent porttitor convallis blandit. Fusce vel egestas dolor. Donec eu augue enim. Donec rutrum non lacus ac rhoncus. Morbi quis luctus leo, nec cursus ex |</textarea
-            >
-          </div>
-          <input type="submit" name="submit" class="btn" />
-        </form>
-        <!-- <img src="./images/form--shape.png" alt="shape on the background" class="form__shape"> FOR PC -->
+  <div class="container">
+    <section class="sponsors-wrapper">
+      <h3 class="sponsors__title">Our Sponsors</h3>
+      <div class="sponsors-block">
+        <img src="./images/google-icon.png" alt="Google" class="sponsors__image" />
+        <img src="./images/google-icon.png" alt="Google" class="sponsors__image" />
+        <img src="./images/google-icon.png" alt="Google" class="sponsors__image" />
+        <img src="./images/google-icon.png" alt="Google" class="sponsors__image" />
+        <img src="./images/google-icon.png" alt="Google" class="sponsors__image" />
+        <img src="./images/google-icon.png" alt="Google" class="sponsors__image" />
+        <img src="./images/google-icon.png" alt="Google" class="sponsors__image" />
+        <img src="./images/google-icon.png" alt="Google" class="sponsors__image" />
+      </div>
+      <button class="btn">Become a Sponsor</button>
+    </section>
+  </div>
+
+  <div class="container">
+    <div class="quote">
+      <h3 class="quote__title">Testimonials</h3>
+      <div class="quote-block">
+        <p class="quote__text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since the 1500s, when an unknown printer took a galley of type
+          and scrambled it to make a type specimen book.
+        </p>
+        <img src="./images/avatar-1.png" alt="Authors photo" class="quote__photo" />
+        <h5 class="quote__name">Johnny Doe</h5>
+        <h6 class="quote__subtitle"><a>ipsum.com</a></h6>
+      </div>
+      <div class="quote-block">
+        <p class="quote__text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since the 1500s, when an unknown printer took a galley of type
+          and scrambled it to make a type specimen book.
+        </p>
+        <img src="./images/avatar-2.png" alt="Authors photo" class="quote__photo" />
+        <h5 class="quote__name">Ellie James</h5>
+        <h6 class="quote__subtitle"><a>ipsum.com</a></h6>
+      </div>
+      <div class="quote-block">
+        <p class="quote__text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since the 1500s, when an unknown printer took a galley of type
+          and scrambled it to make a type specimen book.
+        </p>
+        <img src="./images/avatar-3.png" alt="Authors photo" class="quote__photo" />
+        <h5 class="quote__name">Myne Barack</h5>
+        <h6 class="quote__subtitle"><a>ipsum.com</a></h6>
       </div>
     </div>
+  </div>
 
-    <div class="contact">
-      <h3 class="contact__title">Contact us</h3>
-      <h5 class="contact__subtitle">
-        Have an inquiry? We’ll be happy to assist you
-      </h5>
-      <ul class="contact-list">
-        <li class="contact-list__el contact--phone">+92 333 6527366</li>
-        <li class="contact-list__el contact--email">abuzer@greelogix.com</li>
-        <li class="contact-list__el contact--location">
-          Plot 252, Block L Phase 2 Johar Town, Lahore, PK
-        </li>
-      </ul>
-      <img
-        src="./images/contact__shape.png"
-        alt="a shape"
-        class="contact__shape"
-      />
+  <section class="shots">
+    <div class="container">
+      <h2 class="shots__title">See our Best Shots</h2>
     </div>
+    <div class="shots-wrapper splide">
+      <div class="splide__arrows">
+        <button class="splide__arrow splide__arrow--prev">
+          <svg width="55" height="55" viewBox="40 30 60 60" preserveAspectRatio="none" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_893_469)">
+              <circle cx="68" cy="58" r="28" fill="white" />
+              <path
+                d="M66.5148 58.1557L73.4448 65.0857L71.4652 67.0653L62.5556 58.1557L71.4652 49.2461L73.4448 51.2257L66.5148 58.1557Z"
+                fill="#222222" />
+            </g>
+            <defs>
+              <filter id="filter0_d_893_469" x="0" y="0" width="136" height="136" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_893_469" />
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_893_469" result="shape" />
+              </filter>
+            </defs>
+          </svg>
+        </button>
+        <button class="splide__arrow splide__arrow--next">
+          <svg width="55" height="55" viewBox="40 30 60 60" preserveAspectRatio="none" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_893_466)">
+              <circle cx="68" cy="58" r="28" fill="white" />
+              <path
+                d="M69.4862 58.1553L62.5562 51.2253L64.5358 49.2457L73.4454 58.1553L64.5358 67.0649L62.5562 65.0853L69.4862 58.1553Z"
+                fill="#222222" />
+            </g>
+            <defs>
+              <filter id="filter0_d_893_466" x="0" y="0" width="136" height="136" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_893_466" />
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_893_466" result="shape" />
+              </filter>
+            </defs>
+          </svg>
+        </button>
+      </div>
+      <div class="splide__track">
+        <div class="splide__list">
+          <div class="shots__shot shot splide__slide">
+            <div class="shot__image-wrapper">
+              <img src="./images/shot-2.png" alt="our shot" class="shot__image" />
+            </div>
+            <div class="shot__content">
+              <div class="shot__feedback">
+                <button class="shot__likes" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_893_411)">
+                      <path
+                        d="M12.001 4.52898C14.35 2.41998 17.98 2.48998 20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.993L11.999 21.485L3.52101 12.993C1.41701 10.637 1.49601 7.01898 3.75701 4.75698C6.02201 2.49298 9.64501 2.41698 12.001 4.52898V4.52898ZM18.827 6.16998C17.327 4.66798 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09101 4.60598 6.67601 4.66798 5.17201 6.17198C3.68201 7.66198 3.60701 10.047 4.98001 11.623L12 18.654L19.02 11.624C20.394 10.047 20.319 7.66498 18.827 6.16998V6.16998Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_893_411">
+                        <rect width="24" height="24" fill="#ffffff" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span>412</span>
+                </button>
+                <button class="shot__comments" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_893_438)">
+                      <path
+                        d="M10 3H14C16.1217 3 18.1566 3.84285 19.6569 5.34315C21.1571 6.84344 22 8.87827 22 11C22 13.1217 21.1571 15.1566 19.6569 16.6569C18.1566 18.1571 16.1217 19 14 19V22.5C9 20.5 2 17.5 2 11C2 8.87827 2.84285 6.84344 4.34315 5.34315C5.84344 3.84285 7.87827 3 10 3ZM12 17H14C14.7879 17 15.5681 16.8448 16.2961 16.5433C17.0241 16.2417 17.6855 15.7998 18.2426 15.2426C18.7998 14.6855 19.2417 14.0241 19.5433 13.2961C19.8448 12.5681 20 11.7879 20 11C20 10.2121 19.8448 9.43185 19.5433 8.7039C19.2417 7.97595 18.7998 7.31451 18.2426 6.75736C17.6855 6.20021 17.0241 5.75825 16.2961 5.45672C15.5681 5.15519 14.7879 5 14 5H10C8.4087 5 6.88258 5.63214 5.75736 6.75736C4.63214 7.88258 4 9.4087 4 11C4 14.61 6.462 16.966 12 19.48V17Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_893_438">
+                        <rect width="24" height="24" fill="#ffffff" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span>140</span>
+                </button>
+              </div>
+              <h6 class="shot__title">Lorem Ipsum Amet</h6>
+              <p class="shot__hashtags hashtags">
+                <a href="#" role="link" class="hashtags__tag">#music</a>
+                <a href="#" role="link" class="hashtags__tag">#concert</a>
+                <a href="#" role="link" class="hashtags__tag">#conference</a>
+                <a href="#" role="link" class="hashtags__tag">#london</a>
+                <a href="#" role="link" class="hashtags__tag">#event</a>
+                <a href="#" role="link" class="hashtags__tag">#artist</a>
+                <a href="#" role="link" class="hashtags__tag">#dj</a>
+                <a href="#" role="link" class="hashtags__tag">#soundtrack</a>
+                <a href="#" role="link" class="hashtags__tag">#dance</a>
+              </p>
+            </div>
+          </div>
+          <div class="shots__shot shot splide__slide">
+            <div class="shot__image-wrapper">
+              <img src="./images/shot-3.png" alt="our shot" class="shot__image" />
+            </div>
+            <div class="shot__content">
+              <div class="shot__feedback">
+                <button class="shot__likes" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_893_411)">
+                      <path
+                        d="M12.001 4.52898C14.35 2.41998 17.98 2.48998 20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.993L11.999 21.485L3.52101 12.993C1.41701 10.637 1.49601 7.01898 3.75701 4.75698C6.02201 2.49298 9.64501 2.41698 12.001 4.52898V4.52898ZM18.827 6.16998C17.327 4.66798 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09101 4.60598 6.67601 4.66798 5.17201 6.17198C3.68201 7.66198 3.60701 10.047 4.98001 11.623L12 18.654L19.02 11.624C20.394 10.047 20.319 7.66498 18.827 6.16998V6.16998Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_893_411">
+                        <rect width="24" height="24" fill="#ffffff" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span>412</span>
+                </button>
+                <button class="shot__comments" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_893_438)">
+                      <path
+                        d="M10 3H14C16.1217 3 18.1566 3.84285 19.6569 5.34315C21.1571 6.84344 22 8.87827 22 11C22 13.1217 21.1571 15.1566 19.6569 16.6569C18.1566 18.1571 16.1217 19 14 19V22.5C9 20.5 2 17.5 2 11C2 8.87827 2.84285 6.84344 4.34315 5.34315C5.84344 3.84285 7.87827 3 10 3ZM12 17H14C14.7879 17 15.5681 16.8448 16.2961 16.5433C17.0241 16.2417 17.6855 15.7998 18.2426 15.2426C18.7998 14.6855 19.2417 14.0241 19.5433 13.2961C19.8448 12.5681 20 11.7879 20 11C20 10.2121 19.8448 9.43185 19.5433 8.7039C19.2417 7.97595 18.7998 7.31451 18.2426 6.75736C17.6855 6.20021 17.0241 5.75825 16.2961 5.45672C15.5681 5.15519 14.7879 5 14 5H10C8.4087 5 6.88258 5.63214 5.75736 6.75736C4.63214 7.88258 4 9.4087 4 11C4 14.61 6.462 16.966 12 19.48V17Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_893_438">
+                        <rect width="24" height="24" fill="#ffffff" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span>140</span>
+                </button>
+              </div>
+              <h6 class="shot__title">Lorem Ipsum Amet</h6>
+              <p class="shot__hashtags hashtags">
+                <a href="#" role="link" class="hashtags__tag">#music</a>
+                <a href="#" role="link" class="hashtags__tag">#concert</a>
+                <a href="#" role="link" class="hashtags__tag">#conference</a>
+                <a href="#" role="link" class="hashtags__tag">#london</a>
+                <a href="#" role="link" class="hashtags__tag">#event</a>
+                <a href="#" role="link" class="hashtags__tag">#artist</a>
+                <a href="#" role="link" class="hashtags__tag">#dj</a>
+                <a href="#" role="link" class="hashtags__tag">#soundtrack</a>
+                <a href="#" role="link" class="hashtags__tag">#dance</a>
+              </p>
+            </div>
+          </div>
+          <div class="shots__shot shot splide__slide">
+            <div class="shot__image-wrapper">
+              <img src="./images/shot-1.png" alt="our shot" class="shot__image" />
+            </div>
+            <div class="shot__content">
+              <div class="shot__feedback">
+                <button class="shot__likes" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_893_411)">
+                      <path
+                        d="M12.001 4.52898C14.35 2.41998 17.98 2.48998 20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.993L11.999 21.485L3.52101 12.993C1.41701 10.637 1.49601 7.01898 3.75701 4.75698C6.02201 2.49298 9.64501 2.41698 12.001 4.52898V4.52898ZM18.827 6.16998C17.327 4.66798 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09101 4.60598 6.67601 4.66798 5.17201 6.17198C3.68201 7.66198 3.60701 10.047 4.98001 11.623L12 18.654L19.02 11.624C20.394 10.047 20.319 7.66498 18.827 6.16998V6.16998Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_893_411">
+                        <rect width="24" height="24" fill="#ffffff" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span>412</span>
+                </button>
+                <button class="shot__comments" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_893_438)">
+                      <path
+                        d="M10 3H14C16.1217 3 18.1566 3.84285 19.6569 5.34315C21.1571 6.84344 22 8.87827 22 11C22 13.1217 21.1571 15.1566 19.6569 16.6569C18.1566 18.1571 16.1217 19 14 19V22.5C9 20.5 2 17.5 2 11C2 8.87827 2.84285 6.84344 4.34315 5.34315C5.84344 3.84285 7.87827 3 10 3ZM12 17H14C14.7879 17 15.5681 16.8448 16.2961 16.5433C17.0241 16.2417 17.6855 15.7998 18.2426 15.2426C18.7998 14.6855 19.2417 14.0241 19.5433 13.2961C19.8448 12.5681 20 11.7879 20 11C20 10.2121 19.8448 9.43185 19.5433 8.7039C19.2417 7.97595 18.7998 7.31451 18.2426 6.75736C17.6855 6.20021 17.0241 5.75825 16.2961 5.45672C15.5681 5.15519 14.7879 5 14 5H10C8.4087 5 6.88258 5.63214 5.75736 6.75736C4.63214 7.88258 4 9.4087 4 11C4 14.61 6.462 16.966 12 19.48V17Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_893_438">
+                        <rect width="24" height="24" fill="#ffffff" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span>140</span>
+                </button>
+              </div>
+              <h6 class="shot__title">Lorem Ipsum Amet</h6>
+              <p class="shot__hashtags hashtags">
+                <a href="#" role="link" class="hashtags__tag">#music</a>
+                <a href="#" role="link" class="hashtags__tag">#concert</a>
+                <a href="#" role="link" class="hashtags__tag">#conference</a>
+                <a href="#" role="link" class="hashtags__tag">#london</a>
+                <a href="#" role="link" class="hashtags__tag">#event</a>
+                <a href="#" role="link" class="hashtags__tag">#artist</a>
+                <a href="#" role="link" class="hashtags__tag">#dj</a>
+                <a href="#" role="link" class="hashtags__tag">#soundtrack</a>
+                <a href="#" role="link" class="hashtags__tag">#dance</a>
+              </p>
+            </div>
+          </div>
+          <div class="shots__shot shot splide__slide">
+            <div class="shot__image-wrapper">
+              <img src="./images/shot-2.png" alt="our shot" class="shot__image" />
+            </div>
+            <div class="shot__content">
+              <div class="shot__feedback">
+                <button class="shot__likes" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_893_411)">
+                      <path
+                        d="M12.001 4.52898C14.35 2.41998 17.98 2.48998 20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.993L11.999 21.485L3.52101 12.993C1.41701 10.637 1.49601 7.01898 3.75701 4.75698C6.02201 2.49298 9.64501 2.41698 12.001 4.52898V4.52898ZM18.827 6.16998C17.327 4.66798 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09101 4.60598 6.67601 4.66798 5.17201 6.17198C3.68201 7.66198 3.60701 10.047 4.98001 11.623L12 18.654L19.02 11.624C20.394 10.047 20.319 7.66498 18.827 6.16998V6.16998Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_893_411">
+                        <rect width="24" height="24" fill="#ffffff" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span>412</span>
+                </button>
+                <button class="shot__comments" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_893_438)">
+                      <path
+                        d="M10 3H14C16.1217 3 18.1566 3.84285 19.6569 5.34315C21.1571 6.84344 22 8.87827 22 11C22 13.1217 21.1571 15.1566 19.6569 16.6569C18.1566 18.1571 16.1217 19 14 19V22.5C9 20.5 2 17.5 2 11C2 8.87827 2.84285 6.84344 4.34315 5.34315C5.84344 3.84285 7.87827 3 10 3ZM12 17H14C14.7879 17 15.5681 16.8448 16.2961 16.5433C17.0241 16.2417 17.6855 15.7998 18.2426 15.2426C18.7998 14.6855 19.2417 14.0241 19.5433 13.2961C19.8448 12.5681 20 11.7879 20 11C20 10.2121 19.8448 9.43185 19.5433 8.7039C19.2417 7.97595 18.7998 7.31451 18.2426 6.75736C17.6855 6.20021 17.0241 5.75825 16.2961 5.45672C15.5681 5.15519 14.7879 5 14 5H10C8.4087 5 6.88258 5.63214 5.75736 6.75736C4.63214 7.88258 4 9.4087 4 11C4 14.61 6.462 16.966 12 19.48V17Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_893_438">
+                        <rect width="24" height="24" fill="#ffffff" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span>140</span>
+                </button>
+              </div>
+              <h6 class="shot__title">Lorem Ipsum Amet</h6>
+              <p class="shot__hashtags hashtags">
+                <a href="#" role="link" class="hashtags__tag">#music</a>
+                <a href="#" role="link" class="hashtags__tag">#concert</a>
+                <a href="#" role="link" class="hashtags__tag">#conference</a>
+                <a href="#" role="link" class="hashtags__tag">#london</a>
+                <a href="#" role="link" class="hashtags__tag">#event</a>
+                <a href="#" role="link" class="hashtags__tag">#artist</a>
+                <a href="#" role="link" class="hashtags__tag">#dj</a>
+                <a href="#" role="link" class="hashtags__tag">#soundtrack</a>
+                <a href="#" role="link" class="hashtags__tag">#dance</a>
+              </p>
+            </div>
+          </div>
+          <div class="shots__shot shot splide__slide">
+            <div class="shot__image-wrapper">
+              <img src="./images/shot-3.png" alt="our shot" class="shot__image" />
+            </div>
+            <div class="shot__content">
+              <div class="shot__feedback">
+                <button class="shot__likes" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_893_411)">
+                      <path
+                        d="M12.001 4.52898C14.35 2.41998 17.98 2.48998 20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.993L11.999 21.485L3.52101 12.993C1.41701 10.637 1.49601 7.01898 3.75701 4.75698C6.02201 2.49298 9.64501 2.41698 12.001 4.52898V4.52898ZM18.827 6.16998C17.327 4.66798 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09101 4.60598 6.67601 4.66798 5.17201 6.17198C3.68201 7.66198 3.60701 10.047 4.98001 11.623L12 18.654L19.02 11.624C20.394 10.047 20.319 7.66498 18.827 6.16998V6.16998Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_893_411">
+                        <rect width="24" height="24" fill="#ffffff" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span>412</span>
+                </button>
+                <button class="shot__comments" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_893_438)">
+                      <path
+                        d="M10 3H14C16.1217 3 18.1566 3.84285 19.6569 5.34315C21.1571 6.84344 22 8.87827 22 11C22 13.1217 21.1571 15.1566 19.6569 16.6569C18.1566 18.1571 16.1217 19 14 19V22.5C9 20.5 2 17.5 2 11C2 8.87827 2.84285 6.84344 4.34315 5.34315C5.84344 3.84285 7.87827 3 10 3ZM12 17H14C14.7879 17 15.5681 16.8448 16.2961 16.5433C17.0241 16.2417 17.6855 15.7998 18.2426 15.2426C18.7998 14.6855 19.2417 14.0241 19.5433 13.2961C19.8448 12.5681 20 11.7879 20 11C20 10.2121 19.8448 9.43185 19.5433 8.7039C19.2417 7.97595 18.7998 7.31451 18.2426 6.75736C17.6855 6.20021 17.0241 5.75825 16.2961 5.45672C15.5681 5.15519 14.7879 5 14 5H10C8.4087 5 6.88258 5.63214 5.75736 6.75736C4.63214 7.88258 4 9.4087 4 11C4 14.61 6.462 16.966 12 19.48V17Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_893_438">
+                        <rect width="24" height="24" fill="#ffffff" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span>140</span>
+                </button>
+              </div>
+              <h6 class="shot__title">Lorem Ipsum Amet</h6>
+              <p class="shot__hashtags hashtags">
+                <a href="#" role="link" class="hashtags__tag">#music</a>
+                <a href="#" role="link" class="hashtags__tag">#concert</a>
+                <a href="#" role="link" class="hashtags__tag">#conference</a>
+                <a href="#" role="link" class="hashtags__tag">#london</a>
+                <a href="#" role="link" class="hashtags__tag">#event</a>
+                <a href="#" role="link" class="hashtags__tag">#artist</a>
+                <a href="#" role="link" class="hashtags__tag">#dj</a>
+                <a href="#" role="link" class="hashtags__tag">#soundtrack</a>
+                <a href="#" role="link" class="hashtags__tag">#dance</a>
+              </p>
+            </div>
+          </div>
+          <div class="shots__shot shot splide__slide">
+            <div class="shot__image-wrapper">
+              <img src="./images/shot-2.png" alt="our shot" class="shot__image" />
+            </div>
+            <div class="shot__content">
+              <div class="shot__feedback">
+                <button class="shot__likes" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_893_411)">
+                      <path
+                        d="M12.001 4.52898C14.35 2.41998 17.98 2.48998 20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.993L11.999 21.485L3.52101 12.993C1.41701 10.637 1.49601 7.01898 3.75701 4.75698C6.02201 2.49298 9.64501 2.41698 12.001 4.52898V4.52898ZM18.827 6.16998C17.327 4.66798 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09101 4.60598 6.67601 4.66798 5.17201 6.17198C3.68201 7.66198 3.60701 10.047 4.98001 11.623L12 18.654L19.02 11.624C20.394 10.047 20.319 7.66498 18.827 6.16998V6.16998Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_893_411">
+                        <rect width="24" height="24" fill="#ffffff" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span>412</span>
+                </button>
+                <button class="shot__comments" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_893_438)">
+                      <path
+                        d="M10 3H14C16.1217 3 18.1566 3.84285 19.6569 5.34315C21.1571 6.84344 22 8.87827 22 11C22 13.1217 21.1571 15.1566 19.6569 16.6569C18.1566 18.1571 16.1217 19 14 19V22.5C9 20.5 2 17.5 2 11C2 8.87827 2.84285 6.84344 4.34315 5.34315C5.84344 3.84285 7.87827 3 10 3ZM12 17H14C14.7879 17 15.5681 16.8448 16.2961 16.5433C17.0241 16.2417 17.6855 15.7998 18.2426 15.2426C18.7998 14.6855 19.2417 14.0241 19.5433 13.2961C19.8448 12.5681 20 11.7879 20 11C20 10.2121 19.8448 9.43185 19.5433 8.7039C19.2417 7.97595 18.7998 7.31451 18.2426 6.75736C17.6855 6.20021 17.0241 5.75825 16.2961 5.45672C15.5681 5.15519 14.7879 5 14 5H10C8.4087 5 6.88258 5.63214 5.75736 6.75736C4.63214 7.88258 4 9.4087 4 11C4 14.61 6.462 16.966 12 19.48V17Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_893_438">
+                        <rect width="24" height="24" fill="#ffffff" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span>140</span>
+                </button>
+              </div>
+              <h6 class="shot__title">Lorem Ipsum Amet</h6>
+              <p class="shot__hashtags hashtags">
+                <a href="#" role="link" class="hashtags__tag">#music</a>
+                <a href="#" role="link" class="hashtags__tag">#concert</a>
+                <a href="#" role="link" class="hashtags__tag">#conference</a>
+                <a href="#" role="link" class="hashtags__tag">#london</a>
+                <a href="#" role="link" class="hashtags__tag">#event</a>
+                <a href="#" role="link" class="hashtags__tag">#artist</a>
+                <a href="#" role="link" class="hashtags__tag">#dj</a>
+                <a href="#" role="link" class="hashtags__tag">#soundtrack</a>
+                <a href="#" role="link" class="hashtags__tag">#dance</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-      <a href="#" class="logo"><img src="./images/logo.svg" alt="Logo" /></a>
-      <ul class="footer-list">
-        <li class="footer-list__el">Home</li>
-        <li class="footer-list__el">Company</li>
-        <li class="footer-list__el">Blog</li>
-        <li class="footer-list__el">Contact us</li>
-        <li class="footer-list__el">Sitemap</li>
-      </ul>
-      <ul class="footer-list icons">
-        <li class="footer-list__el">
-          <img src="./images/facebook-icon.svg" alt="facebook icon" />
-        </li>
-        <li class="footer-list__el">
-          <img src="./images/twitter-icon.svg" alt="twitter icon" />
-        </li>
-        <li class="footer-list__el">
-          <img src="./images/linkedin-icon.svg" alt="facebook icon" />
-        </li>
-        <li class="footer-list__el">
-          <img src="./images/instagram-icon.svg" alt="instagram icon" />
-        </li>
-      </ul>
-      <span>© musik.com, 2021 </span>
-    </footer>
+  <div class="container">
+    <div class="form-block">
+      <h3 class="form__title">Fill in your details</h3>
+      <form action="" method="get">
+        <div class="form__input-wrapper">
+          <label for="name" class="form__label">Name</label>
+          <input type="text" class="form__input" id="name" placeholder="John Doe" />
+        </div>
+        <div class="form__input-wrapper">
+          <label for="email" class="form__label">Email</label>
+          <input type="text" class="form__input" id="email" placeholder="johndoe2347@mail.com" />
+        </div>
+        <div class="form__input-wrapper">
+          <label for="message" class="form__label label--blue">Message</label>
+          <textarea class="form__textarea" name="message" id="message" cols="20" rows="8">
+Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate vitae, fringilla id magna. Vestibulum ornare eget urna nec pulvinar. Praesent porttitor convallis blandit. Fusce vel egestas dolor. Donec eu augue enim. Donec rutrum non lacus ac rhoncus. Morbi quis luctus leo, nec cursus ex |</textarea>
+        </div>
+        <input type="submit" name="submit" class="btn" />
+      </form>
+      <!-- <img src="./images/form--shape.png" alt="shape on the background" class="form__shape"> FOR PC -->
+    </div>
+  </div>
 
-    <script src="./js/script.js" type="module"></script>
-  </body>
+  <div class="contact">
+    <h3 class="contact__title">Contact us</h3>
+    <h5 class="contact__subtitle">
+      Have an inquiry? We’ll be happy to assist you
+    </h5>
+    <ul class="contact-list">
+      <li class="contact-list__el contact--phone">+92 333 6527366</li>
+      <li class="contact-list__el contact--email">abuzer@greelogix.com</li>
+      <li class="contact-list__el contact--location">
+        Plot 252, Block L Phase 2 Johar Town, Lahore, PK
+      </li>
+    </ul>
+    <img src="./images/contact__shape.png" alt="a shape" class="contact__shape" />
+  </div>
+
+  <footer>
+    <a href="#" class="logo"><img src="./images/logo.svg" alt="Logo" /></a>
+    <ul class="footer-list">
+      <li class="footer-list__el">Home</li>
+      <li class="footer-list__el">Company</li>
+      <li class="footer-list__el">Blog</li>
+      <li class="footer-list__el">Contact us</li>
+      <li class="footer-list__el">Sitemap</li>
+    </ul>
+    <ul class="footer-list icons">
+      <li class="footer-list__el">
+        <img src="./images/facebook-icon.svg" alt="facebook icon" />
+      </li>
+      <li class="footer-list__el">
+        <img src="./images/twitter-icon.svg" alt="twitter icon" />
+      </li>
+      <li class="footer-list__el">
+        <img src="./images/linkedin-icon.svg" alt="facebook icon" />
+      </li>
+      <li class="footer-list__el">
+        <img src="./images/instagram-icon.svg" alt="instagram icon" />
+      </li>
+    </ul>
+    <span>© musik.com, 2021 </span>
+  </footer>
+
+  <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js  "></script>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>

@@ -14,13 +14,14 @@ section.shots {
     justify-content: center;
     gap: 30px;
     overflow: hidden;
+    position: relative;
 }
 
 .shot__image-wrapper {
     display: flex;
 }
 
-.shot__imgage {
+.shot__image {
     max-width: 100%;
     height: auto;
 }
@@ -56,8 +57,8 @@ section.shots {
 
 .shot__feedback > button:hover path,
 .shot__feedback > button:hover span {
-    fill: #ff0000;
-    color: #ff0000;
+    fill: var(--theme-red);
+    color: var(--theme-red);
 }
 
 .shot__feedback > button > span {
@@ -76,4 +77,49 @@ section.shots {
 .hashtags__tag:hover {
     text-decoration: underline;
     opacity: 1;
+}
+
+.splide__arrows {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 30%;
+}
+
+.splide__arrow {
+    position: absolute;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    padding: 0;
+    transition: var(--main-transition-duration);
+}
+
+.splide__arrow > svg circle {
+    fill: #f1f1f1;
+}
+
+.splide__arrow:hover {
+    transform: scale(1.2);
+}
+
+.splide__arrow--prev {
+    left: 135px;
+}
+
+.splide__arrow--next {
+    right: 130px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .splide__arrow--prev {
+        left: 15px;
+    }
+    
+    .splide__arrow--next {
+        right: 10px;
+    }
 }
