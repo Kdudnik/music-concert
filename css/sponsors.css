@@ -14,10 +14,37 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 60px 30px;
+    gap: 60px 60px;
 }
 
 .sponsors__image {
     width: 25%;
     height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .sponsors__title {
+        font-size: 40px;
+    }
+
+    .sponsors__image-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 25%;
+    }
+
+    .sponsors__image {
+        width: 60%;
+    }
+
+    .sponsors-block {
+        gap: 60px 0;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .sponsors__title {
+        font-size: 50px;
+    }
 }

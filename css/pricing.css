@@ -36,14 +36,13 @@
 
 .terms-list {
     padding: 30px 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
     gap: 15px;
 }
 
 .terms-list__el {
     opacity: 0.5;
+    flex-basis: 100%;
 }
 
 .included {
@@ -76,4 +75,37 @@
 
 .line--red {
     background-color: var(--theme-red);
+}
+
+@media screen and (min-width: 768px) {
+    .pricing__title {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .pricing-blocks__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pricing__title {
+        font-size: 50px;
+    }
+
+    .pricing-block {
+        padding: 50px 75px;
+    }
+
+    .pricing-block__title {
+        font-size: 30px;
+    }
+
+    .pricing-block__price {
+        font-size: 45px;
+    }
+
+    .terms-list__el {
+        font-size: 20px;
+    }
 }

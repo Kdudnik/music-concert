@@ -7,6 +7,7 @@
 
 .quote__title {
     font-size: 30px;
+    text-align: center;
 }
 
 .quote-block {
@@ -38,7 +39,7 @@
 
 .quote__photo {
     padding-top: 30px;
-    width: 30%;
+    width: 60%;
     height: auto;
 }
 
@@ -55,4 +56,61 @@
 .quote__subtitle a {
     font-size: 12px;
     color: var(--theme-blue);
+}
+
+@media screen and (min-width: 768px) {
+    .quote__photo {
+        width: auto;
+    }
+
+    .quote__text {
+        padding: 30px;
+        padding-bottom: 90px;
+        flex-basis: 75%;
+        background-color: #F8F8F8;
+    }
+
+    .quote__photo-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+
+    .quote__text::before {
+        left: 15px;
+        top: 15px;
+    }
+
+    .quote__text::after {
+        bottom: 75px;
+        right: 15px;
+    }
+
+    .quote {
+        gap: 60px;
+    }
+
+    .quote-blocks-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 150px;
+    }
+
+    .quote-block {
+        position: relative;
+        padding: 0;
+    }
+
+    .quote__photo-wrapper {
+        position: absolute;
+        bottom: 0;
+        transform: translateY(60%);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .quote-blocks-wrapper {
+        flex-wrap: nowrap;
+    }
 }
