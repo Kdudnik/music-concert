@@ -12,6 +12,7 @@
 @import url(form.css);
 @import url(contact.css);
 @import url(footer.css);
+@import url(modal.css);
 @import url(../node_modules/@splidejs/splide/dist/css/splide-core.min.css);
 
 body {
@@ -41,6 +42,11 @@ h6 {
 h2 {
     font-size: 34px;
     line-height: 44.2px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 38px;
 }
 
 h6 {
@@ -79,6 +85,10 @@ section {
     }
 }
 
+price {
+    display: block;
+}
+
 .container {
     max-width: var(--max-page-width);
     margin: 0 auto;
@@ -115,7 +125,7 @@ section {
     font-weight: 700;
     cursor: pointer;
     transition: var(--main-transition-duration);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .btn--white {
@@ -146,4 +156,8 @@ section {
     box-shadow: none;
     border: 2px solid var(--theme-blue);
     color: var(--theme-blue);
+}
+
+.is-hidden {
+    display: none;
 }

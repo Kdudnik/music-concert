@@ -56,7 +56,9 @@ section.shots {
 }
 
 .shot__feedback > button:hover path,
-.shot__feedback > button:hover span {
+.shot__feedback > button:hover span,
+.shot__feedback > button:focus path,
+.shot__feedback > button:focus span{
     fill: var(--theme-red);
     color: var(--theme-red);
 }

@@ -40,6 +40,7 @@
       </div>
     </div>
   </header>
+  
   <div class="hero">
     <img class="hero__background" src="./images/hero-bg.png" alt="Background" />
     <div class="container">
@@ -288,46 +289,46 @@
     </div>
   </div>
 
-  <div class="container">
-    <section class="pricing">
-      <h3 class="pricing__title">Choose a Tier that’s right for you</h3>
-      <div class="pricing-blocks__wrapper">
-        <div class="pricing-block">
-          <div class="line line--black"></div>
-          <h4 class="pricing-block__title">Basic</h4>
-          <span class="pricing-block__price">$100</span>
-          <ul class="terms-list">
-            <li class="terms-list__el included">1 Seat Available</li>
-            <li class="terms-list__el">Access to Wifi Router</li>
-            <li class="terms-list__el">Free Food & Coffee</li>
+  <section class="pricing">
+    <div class="container">
+      <h2 class="pricing__title">Choose a Tier that’s right for you</h2>
+      <div class="pricing-wrapper">
+        <div class="card card--price card--basic">
+          <div class="card__line"></div>
+          <h3 class="card__title">Basic</h3>
+          <price class="card__price">$100</price>
+          <ul class="card__terms">
+            <li class="is-included">1 Seat Available</li>
+            <li>Access to Wifi Router</li>
+            <li>Free Food & Coffee</li>
           </ul>
-          <button class="btn btn--bordered">Get Tickets</button>
+          <button class="btn btn--bordered modal-caller" data-level="Basic">Get Tickets</button>
         </div>
-        <div class="pricing-block">
-          <div class="line line--blue"></div>
-          <h4 class="pricing-block__title text--blue">Standart</h4>
-          <span class="pricing-block__price text--blue">$150</span>
-          <ul class="terms-list">
-            <li class="terms-list__el included">1 Seat Available</li>
-            <li class="terms-list__el included">Access to Wifi Router</li>
-            <li class="terms-list__el">Free Food & Coffee</li>
+        <div class="card card--price card--standard">
+          <div class="card__line"></div>
+          <h3 class="card__title">Standard</h3>
+          <price class="card__price">$150</price>
+          <ul class="card__terms">
+            <li class="is-included">1 Seat Available</li>
+            <li class="is-included">Access to Wifi Router</li>
+            <li class="">Free Food & Coffee</li>
           </ul>
-          <button class="btn">Get Tickets</button>
+          <button class="btn btn--bordered modal-caller" data-level="Standard">Get Tickets</button>
         </div>
-        <div class="pricing-block">
-          <div class="line line--red"></div>
-          <h4 class="pricing-block__title text--red">Premium</h4>
-          <span class="pricing-block__price text--red">$200</span>
-          <ul class="terms-list">
-            <li class="terms-list__el included">1 Seat Available</li>
-            <li class="terms-list__el included">Access to Wifi Router</li>
-            <li class="terms-list__el included">Free Food & Coffee</li>
+        <div class="card card--price card--premium">
+          <div class="card__line"></div>
+          <h3 class="card__title">Premium</h3>
+          <price class="card__price">$200</price>
+          <ul class="card__terms">
+            <li class="is-included">1 Seat Available</li>
+            <li class="is-included">Access to Wifi Router</li>
+            <li class="is-included">Free Food & Coffee</li>
           </ul>
-          <button class="btn btn--bordered">Get Tickets</button>
+          <button class="btn btn--bordered modal-caller" data-level="Premium">Get Tickets</button>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <div class="container">
     <section class="sponsors-wrapper">
@@ -481,7 +482,7 @@
           </div>
           <div class="shots__shot shot splide__slide">
             <div class="shot__image-wrapper">
-              <img src="./images/shot-3.png" alt="our shot" class="shot__image" />
+              <img src="./images/shot-5.png" alt="our shot" class="shot__image" />
             </div>
             <div class="shot__content">
               <div class="shot__feedback">
@@ -579,7 +580,7 @@
           </div>
           <div class="shots__shot shot splide__slide">
             <div class="shot__image-wrapper">
-              <img src="./images/shot-2.png" alt="our shot" class="shot__image" />
+              <img src="./images/shot-3.png" alt="our shot" class="shot__image" />
             </div>
             <div class="shot__content">
               <div class="shot__feedback">
@@ -677,7 +678,7 @@
           </div>
           <div class="shots__shot shot splide__slide">
             <div class="shot__image-wrapper">
-              <img src="./images/shot-2.png" alt="our shot" class="shot__image" />
+              <img src="./images/shot-4.png" alt="our shot" class="shot__image" />
             </div>
             <div class="shot__content">
               <div class="shot__feedback">
@@ -793,7 +794,36 @@ Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate vitae, fringill
     <span>© musik.com, 2021 </span>
   </footer>
 
+  <div class="modal is-hidden">
+    <div class="modal__bg"></div>
+    <div class="modal-wrapper">
+      <span class="modal-close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 16L8 8" stroke="#171740" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M16 8L8 16" stroke="#171740" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </span>
+      <div class="modal__title-wrapper">
+        <h2 class="modal__title"></h2>
+      </div>
+      <div class="modal__form-wrapper">
+        <form action="#" class="modal__form">
+          <div class="form__input-wrapper">
+            <label for="modalName">Name</label>
+            <input class="modal__input" type="text" id="modalName">
+          </div>
+          <div class="form__input-wrapper">
+            <label for="modalSurname">Surname</label>
+            <input class="modal__input" type="password" id="modalSurname">
+          </div>
+          <input class="modal__input btn btn--bordered type="submit" value="Pre-register">
+        </form>
+      </div>
+    </div>
+  </div>
+
   <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js  "></script>
+  <script src="./js/modal.js"></script>
   <script src="./js/script.js"></script>
 </body>
 
