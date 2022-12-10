@@ -1,12 +1,7 @@
 .category {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     margin-top: 30px;
-}
-
-.category__title {
-    font-size: 35px;
 }
 
 .marked--blue {
@@ -112,7 +107,7 @@
     }
 
     .category-block-wrapper {
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .category-block {

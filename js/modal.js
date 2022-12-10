@@ -1,21 +1,23 @@
-const pricing = {
-    Basic: '100$',
-    Standard: '150$',
-    Premium: '200$'
-}
-
 const modal = document.querySelector('.modal')
-const modalCall = document.querySelectorAll('.modal-caller')
-const modalClose = document.querySelector('.modal-close')
-const result = document.querySelector('.modal__title')
+// const modalClose = document.querySelector('.modal-close')
+const priceCardsWrapper = document.querySelector('.pricing-wrapper')
 
-modalClose.addEventListener('click', () => {
-    modal.classList.add("is-hidden")
+modal.addEventListener('click', (event) => {
+    if(event.target.classList.contains('modal__bg') || event.target.closest('.modal-close')) {
+        modal.classList.add("is-hidden")
+        document.body.classList.remove("scroll-disable")
+        document.documentElement.classList.remove("scroll-disable")
+    } 
 })
 
-modalCall.forEach(card => {
-    card.addEventListener('click', () => {
-        modal.classList.remove("is-hidden")
-        result.innerHTML = `You have choosed ${card.dataset.level} for ${pricing[card.dataset.level]}`
-    })
-})
+priceCardsWrapper.addEventListener("click", (event) => {
+    if(!event.target.classList.contains('btn') ) return
+  
+    const text = event.target.parentElement.querySelector('.card__title').innerHTML
+    const price = event.target.parentElement.querySelector('.card__price').innerHTML
+  
+    modal.classList.remove("is-hidden")
+    modal.querySelector('.modal__title').innerHTML = `You have choosed ${text} for ${price}`
+    document.body.classList.add("scroll-disable")
+    document.documentElement.classList.add("scroll-disable")
+  })
