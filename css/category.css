@@ -1,4 +1,81 @@
 .category {
+    margin-top: 240px;
+}
+
+.category h2 > span {
+    color: var(--theme-blue);
+}
+
+.category-wrapper {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category-block {
+    padding: 90px 100px 36px 60px;
+    border-radius: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 190px;
+    cursor: pointer;
+    transition: var(--main-transition-duration);
+}
+
+.category-block:hover {
+    transform: scale(1.1);
+}
+
+.category-block--yellow {
+    background-color: #FBF3E8;
+}
+
+.category-block--red {
+    background-color: #FFEEEE;
+}
+
+.category-block--purple {
+    background-color: #E5DEFF;
+}
+
+.category-block--purple path {
+    fill: #9577ff;
+}
+
+.category-block--pink {
+    background-color: #F9E5F5;
+}
+
+.category-block--sky-blue {
+    background-color: #F3F9FF;
+}
+
+.category-block--active {
+    background-color: var(--theme-blue);
+    color: var(--theme-white);
+}
+
+.category-block--active path {
+    fill: var(--theme-white);
+}
+
+.category-block svg {
+    margin-bottom: 30px;
+}
+
+.category-block h3 {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+
+.category-block p {
+    line-height: 24px;
+}
+
+/* .category {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
@@ -131,4 +208,4 @@
     .category-block {
         flex-basis: 15%;
     }
-}
+} */
