@@ -36,3 +36,16 @@ var splide = new Splide(".splide", {
 })
 
 splide.mount()
+
+// COUNTDOWN-JS
+
+const END = new Date('January 22, 2023 00:00:00')
+const goal = new Date(END.getTime())
+const countdown = Countdown.timer(goal, function(time) {
+  document.querySelector('[data-days]').textContent = `${time.days}d`
+  document.querySelector('[data-hours]').textContent = `${time.hours}h`
+  document.querySelector('[data-minutes]').textContent = `${time.minutes}m`
+  document.querySelector('[data-seconds]').textContent = `${time.seconds}s`
+},function() {
+  document.querySelector('[data-seconds]').textContent = '0s'
+})

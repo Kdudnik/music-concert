@@ -60,10 +60,18 @@
     color: var(--theme-black);
 }
 
+.form__input-wrapper {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
 .modal__input {
     border: 2px solid var(--theme-black);
     padding: 15px;
     border-radius: 8px;
+    width: calc(100% - 35px);
 }
 
 .modal__input:focus-visible {

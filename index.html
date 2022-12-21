@@ -41,21 +41,21 @@
     </div>
   </header>
 
-  <div class="hero">
+  <section class="hero">
     <img class="hero__background" src="./images/hero-bg.png" alt="Background" />
     <div class="container">
-      <h1 class="hero-title">
+      <h1 class="hero__title">
         The Best Experience Of <span class="title--marked">Music</span> In
         2021
       </h1>
-      <p class="hero-text">
+      <p class="hero__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         vitae ligula placerat, eleifend ex non, vehicula libero. Suspendisse
         eget tellus lectus.
       </p>
-      <div class="hero-buttons">
+      <div class="hero__buttons">
         <button class="btn btn--red">Get Started</button>
-        <button class="btn btn--transperant hero__button">
+        <button class="btn btn--transperant">
           <svg width="40" height="40" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_893_173)">
               <path
@@ -71,14 +71,14 @@
           Watch Video
         </button>
       </div>
-      <div class="hero-timer">
-        <div class="timer__value">1d</div>
-        <div class="timer__value">23h</div>
-        <div class="timer__value">59m</div>
-        <div class="timer__value">59s</div>
-      </div>
     </div>
-  </div>
+    <div class="hero__timer timer">
+      <div class="timer__value" data-days>1d</div>
+      <div class="timer__value" data-hours>23h</div>
+      <div class="timer__value" data-minutes>59m</div>
+      <div class="timer__value" data-seconds>59s</div>
+    </div>
+  </section>
 
   <section class="category">
     <div class="container">
@@ -945,6 +945,7 @@ Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate vitae, fringill
   </div>
 
   <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+  <script src="./node_modules/countdown-js/dist/countdown.min.js"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/category.js"></script>
   <script src="./js/script.js"></script>
