@@ -11,25 +11,53 @@
 </head>
 
 <body>
-  <header>
+  <header id="navbarSticky">
     <div class="container">
       <a href="#" class="logo"><img src="./images/logo.svg" alt="Logo" /></a>
       <nav class="navbar">
         <ul class="navbar__list">
-          <li class="navbar__list-el">
-            <a href="#" class="navbar__list-link">Home</a>
+          <li>
+            <a href="#">Home</a>
           </li>
-          <li class="navbar__list-el pop-up-triger">
-            <a href="#" class="navbar__list-link">Speakers</a>
+          <li>
+            <a href="#" class="drop-down-trigger">
+              Speakers
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.76375 1.65551C8.07875 1.99628 8.07875 2.54888 7.76375 2.88965L4.5704 6.34429C4.25537 6.68511 3.74464 6.68511 3.42961 6.34429L0.236259 2.88974C0.0790314 2.71951 -4.78938e-08 2.49558 -3.81498e-08 2.27267C-2.84075e-08 2.04979 0.0789151 1.82588 0.236212 1.65565C0.551248 1.31483 1.06201 1.31479 1.37705 1.6556L3.19335 3.62045L4 4.51597L4.80666 3.62043L6.62296 1.65551C6.938 1.3147 7.44872 1.3147 7.76375 1.65551Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <ul class="drop-down">
+              <li><a href="#">John Doe</a></li>
+              <li><a href="#">Kristina Mo</a></li>
+              <li><a href="#">Your name</a></li>
+              <li><a href="#">Text template</a></li>
+              <li><a href="#">Bla-bla-bla</a></li>
+            </ul>
           </li>
-          <li class="navbar__list-el pop-up-triger">
-            <a href="#" class="navbar__list-link">Schedule</a>
+          <li>
+            <a href="#">
+              Schedule
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.76375 1.65551C8.07875 1.99628 8.07875 2.54888 7.76375 2.88965L4.5704 6.34429C4.25537 6.68511 3.74464 6.68511 3.42961 6.34429L0.236259 2.88974C0.0790314 2.71951 -4.78938e-08 2.49558 -3.81498e-08 2.27267C-2.84075e-08 2.04979 0.0789151 1.82588 0.236212 1.65565C0.551248 1.31483 1.06201 1.31479 1.37705 1.6556L3.19335 3.62045L4 4.51597L4.80666 3.62043L6.62296 1.65551C6.938 1.3147 7.44872 1.3147 7.76375 1.65551Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <ul class="drop-down">
+              <li><a href="#">Monday</a></li>
+              <li><a href="#">Tuesday</a></li>
+              <li><a href="#">Wednesday</a></li>
+              <li><a href="#">Thirstday</a></li>
+              <li><a href="#">Friday</a></li>
+            </ul>
           </li>
-          <li class="navbar__list-el">
-            <a href="#" class="navbar__list-link">Contact us</a>
+          <li>
+            <a href="#">Contact us</a>
           </li>
         </ul>
-        <button class="btn btn--white">Get tickets</button>
+        <button class="btn btn--white" id="anchorBtn">Get tickets</button>
       </nav>
       <div class="burger">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -948,6 +976,7 @@ Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate vitae, fringill
   <script src="./node_modules/countdown-js/dist/countdown.min.js"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/category.js"></script>
+  <script src="./js/header.js"></script>
   <script src="./js/script.js"></script>
 </body>
 
