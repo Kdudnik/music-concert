@@ -1,13 +1,21 @@
 .quote {
-    padding-top: 100px;
+    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.quote__title {
-    font-size: 30px;
-    text-align: center;
+.quote-block-wrapper.splide {
+    visibility: visible;
+    padding: 0 16px;
+}
+
+.quote-block-wrapper .splide__list {
+    display: block;
+}
+
+.quote-block-wrapper .splide__track {
+    overflow: visible;
 }
 
 .quote-block {
@@ -21,12 +29,13 @@
 .quote__text {
     font-size: 15px;
     position: relative;
+    line-height: 24px;
 }
 
 .quote__text::before {
     content: url(../images/hooks-before.svg);
     position: absolute;
-    left: -5px;
+    left: -10px;
     top: -20px;
 }
 
@@ -34,23 +43,22 @@
     content: url(../images/hooks-after.svg);
     position: absolute;
     bottom: -20px;
-    right: -5px;
+    right: -10px;
+}
+
+.quote-block-author {
+    margin-top: 40px;
 }
 
 .quote__photo {
-    padding-top: 30px;
-    width: 60%;
-    height: auto;
+    width: 120px;
+    height: 120px;
 }
 
 .quote__name {
     width: 100%;
     font-size: 20px;
-    padding-top: 15px;
-}
-
-.quote__subtitle {
-    padding-top: 10px;
+    margin-top: 10px;
 }
 
 .quote__subtitle a {
@@ -58,59 +66,66 @@
     color: var(--theme-blue);
 }
 
-@media screen and (min-width: 768px) {
-    .quote__photo {
-        width: auto;
+.quote-block:not(.is-active) .quote__subtitle a {
+    cursor: default;
+}
+
+.quote-block.is-active .quote__subtitle a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 991px) {
+    .quote h2 {
+        margin-bottom: 60px;
     }
 
-    .quote__text {
-        padding: 30px;
-        padding-bottom: 90px;
-        flex-basis: 75%;
-        background-color: #F8F8F8;
-    }
-
-    .quote__photo-wrapper {
+    .quote-block-wrapper {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-        flex-basis: 100%;
+        gap: 30px;
+        align-items: flex-start;
+        min-height: 400px;
     }
 
-    .quote__text::before {
-        left: 15px;
-        top: 15px;
-    }
-
-    .quote__text::after {
-        bottom: 75px;
-        right: 15px;
-    }
-
-    .quote {
-        gap: 60px;
-    }
-
-    .quote-blocks-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 150px;
-    }
-
-    .quote-block {
-        position: relative;
+    .quote-block-wrapper.splide {
+        visibility: initial;
         padding: 0;
     }
 
-    .quote__photo-wrapper {
-        position: absolute;
-        bottom: 0;
-        transform: translateY(60%);
+    .quote-block-wrapper .splide__track {
+        height: 100%;
+        overflow: hidden;
     }
-}
 
-@media screen and (min-width: 1440px) {
-    .quote-blocks-wrapper {
-        flex-wrap: nowrap;
+    .quote-block-wrapper .splide__list {
+        align-items: flex-start;
+        display: flex;
+    }
+
+    .quote-block {
+        margin-top: 20px;
+        flex-basis: 770px;
+        flex-shrink: 0;
+        position: relative;
+        padding: 50px 30px 110px 30px;
+        background-color: #F8F8F8;
+        opacity: .3;
+        transition: var(--main-transtion-duration);
+    }
+
+    .quote .is-active {
+        margin-top: 0;
+        opacity: 1;
+    }
+
+    .quote__text {
+        flex-basis: inherit;
+        flex-shrink: 1;
+    }
+
+    .quote-block-author {
+        position: absolute;
+        bottom: -140px;
+        margin-top: 30px;
     }
 }

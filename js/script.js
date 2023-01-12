@@ -1,4 +1,5 @@
-var splide = new Splide(".splide", {
+// Shots section slider
+const shots = new Splide(".shots .splide", {
   pagination: false,
   type: "loop",
   perPage: 3,
@@ -26,6 +27,7 @@ var splide = new Splide(".splide", {
     425: {
       padding: { left: '6%', right: '5%' },
       perPage: 1,
+      perMove: 1,
       fixedWidth: 370,
       gap: 10,
     },
@@ -35,8 +37,23 @@ var splide = new Splide(".splide", {
   gap: 30,
 })
 
-splide.mount()
+shots.mount()
 
+// Quote section slider
+const quote = new Splide(".quote .splide", {
+  pagination: false,
+  arrows: false,
+  type: "loop",
+  focus: 'center',
+  perPage: 1,
+  perMove: 1,
+  gap: 30,
+})
+
+const mql = window.matchMedia("(min-width: 991px)")
+if(mql.matches) quote.mount()
+console.log(mql)
+console.log(mql.matches)
 // COUNTDOWN-JS
 
 const END = new Date('January 22, 2023 00:00:00')
