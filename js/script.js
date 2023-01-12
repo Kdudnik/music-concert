@@ -66,3 +66,33 @@ const countdown = Countdown.timer(goal, function(time) {
 },function() {
   document.querySelector('[data-seconds]').textContent = '0s'
 })
+
+// SELECT
+
+const mql = window.matchMedia('(min-width: 991px)')
+
+function activateTabs (selector) {
+  const tabs = document.querySelector(selector)
+  const tabArr = tabs.querySelectorAll('.tab')
+  const tableArr = tabs.querySelectorAll('.table')
+  let activeTab = tabs.querySelector('.tab-active')
+  let activeTable = tabs.querySelector('.table-active')
+  
+  tabArr.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tab.classList.add('tab-active')
+      activeTab.classList.remove('tab-active')
+      activeTab = tab
+      tableArr.forEach(table => {
+        if(tab.dataset.target == table.dataset.table) {
+          table.classList.add('table-active')
+          activeTable.classList.remove('table-active')
+          activeTable = table
+        }
+      })
+    })
+  })
+}
+
+if(mql.matches) activateTabs('.event .event__desktop')
+else activateTabs('.event .event__mobile')
